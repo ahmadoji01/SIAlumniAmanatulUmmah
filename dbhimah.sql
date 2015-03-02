@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `cabang` (
 
 INSERT INTO `cabang` (`id_cabang`, `nama_cabang`) VALUES
 ('C001', 'Surabaya'),
-('C002', 'SIdoarjo'),
+('C002', 'Sidoarjo'),
 ('C003', 'Mojokerto'),
 ('C004', 'Malang'),
 ('C005', 'Jember'),
