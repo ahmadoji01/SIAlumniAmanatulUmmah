@@ -3,7 +3,8 @@ Pembagian Tugas Dokumen DPPL
 CDM/PDM = Daniel
 Daftar Tabel = Daniel
 
-Deskripsi Antar Muka Layar = De'ua + Husein
+Deskripsi Antar Muka Layar = De'ua -> Alumni (SUDAH) 
+			     Husein -> Admin
 
 Dekomposisi Sistem	= Jabir
 
