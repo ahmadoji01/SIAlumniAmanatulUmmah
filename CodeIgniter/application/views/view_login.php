@@ -81,11 +81,11 @@
     <div class="container">
 
       <form class="form-signin" method="post" action="home/sign_in">
-        <input type="text" class="input-block-level" placeholder="Username">
-        <input type="password" class="input-block-level" placeholder="Password">
-        <label class="checkbox">
+        <input name="username" type="text" class="input-block-level" placeholder="Username">
+        <input name="password" type="password" class="input-block-level" placeholder="Password">
+        <!--label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
-        </label>
+        </label-->
         <button class="btn btn-block" type="submit" >Login</button>		
       </form>
 	
