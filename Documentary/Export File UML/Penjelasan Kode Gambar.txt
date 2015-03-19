@@ -1,0 +1,6 @@
+Penjelasan Kode Export Gambar UML
+
+AD = Activity Diagram
+PC = Packet Class
+SD = Sequence DIagram
+
