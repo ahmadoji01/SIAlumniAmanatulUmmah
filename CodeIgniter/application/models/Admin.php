@@ -26,8 +26,8 @@
 						SELECT Username, Nama
 						FROM Admin
 						WHERE 
-							Username = '$username' AND
-							Password = '$password'	
+							Username = '$this->username' AND
+							Password = '$this->password'	
 					");
 			$this->db->close();
 			return $query;
