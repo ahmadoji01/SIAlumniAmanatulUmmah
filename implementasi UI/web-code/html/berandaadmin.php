@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,10 +38,6 @@
       #footer {
         background-color: #f5f5f5;
       }
-	  img{
-		width: 30px;
-		height: 30px;
-	  }
 	  .logo{
 		width : 290px;
 		height : 290px;
@@ -121,7 +116,7 @@
 				
 				<li>
 					<div class="btn-group">
-					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i></a>
+					<a href="#" class="btn btn-primary"><i class="icon-user icon-white"></i> Admin</a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
 					
@@ -142,8 +137,11 @@
 					</ul>
 					</div>
 				</li>
-			
-			  </ul>
+				
+				
+				
+				
+			 </ul>
 				
 			</div><!--/.nav-collapse -->
 		  
@@ -186,10 +184,11 @@
 
     <div id="footer">
       <div class="container">
-        <p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" class="img-rounded"> Himah Pusat &nbsp</a> 
+	  <br><br>
+        <p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp</a> 
 		
 		
-		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" class="img-rounded"> @himahpusat </a> </p>
+		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
 		
 		<div class="span11" style="background-color: #e3e3e3">
 			<center><h5>Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
