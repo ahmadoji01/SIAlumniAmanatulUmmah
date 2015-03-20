@@ -133,7 +133,7 @@
               <ul class="nav">
                 <li><a href="berandaadmin.php"><i class="icon-home"></i> Beranda</a></li>
              
-                <li><a href="tentang.php"><i class="icon-bookmark"></i> Tentang</a></li
+                <li><a href="tentangadmin.php"><i class="icon-bookmark"></i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -143,7 +143,7 @@
 			
 				<li>
 					<div class="btn-group">
-					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i></a>
+					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i> Admin</a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="ubahdataadmin.php"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
