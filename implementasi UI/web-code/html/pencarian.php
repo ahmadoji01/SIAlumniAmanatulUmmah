@@ -20,6 +20,9 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
+		background: url(../assets/img/bg.jpg) no-repeat;
+		background-size: 300% 300%;
+		background-position: center top;
       }
 
       /* Wrapper for page content to push down footer */
@@ -35,11 +38,7 @@
       #push,
       #footer {
         height: 60px;
-      }
-      #footer {
-        background-color: #f5f5f5;
-      }
-	 
+      } 
 	  .logo{
 		width : 300px;
 		height : 300px;
@@ -239,8 +238,8 @@
 
     <div id="footer">
       <div class="container">
-			<div class="span11" style="background-color: #e3e3e3">
-			<center><h5>Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+			<div class="span11">
+			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
       </div>
     </div>
