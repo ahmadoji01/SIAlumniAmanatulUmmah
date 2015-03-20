@@ -107,7 +107,7 @@
               <ul class="nav">
                 <li class="active"><a href="berandaadmin.php"><i class="icon-home"></i> Beranda</a></li>
  
-                <li><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li><a href="tentangadmin.php"> <i class="icon-bookmark"> </i> Tentang</a></li
               </ul>
 			</div>
 				
