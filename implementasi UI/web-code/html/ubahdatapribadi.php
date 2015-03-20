@@ -21,6 +21,9 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
+		background: url(../assets/img/bg.jpg) no-repeat;
+		background-size: 300% 300%;
+		background-position: center top;
       }
 
       /* Wrapper for page content to push down footer */
@@ -37,13 +40,6 @@
       #footer {
         height: 60px;
       }
-      #footer {
-        background-color: #f5f5f5;
-      }
-	  img{
-		width: 60px;
-		height: 60px;
-	  }
 	  .logo{
 		width : 300px;
 		height : 300px;
@@ -128,7 +124,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="beranda.php">SI-HIMAH</a>
+            <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse navbar-responsive-collapse collapse">
               <ul class="nav">
                 <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
@@ -565,11 +561,7 @@
 					   </div>
 				  </div>
 		</div>
-		 
-		
-		 
-		 
-		 </div>
+	 </div>
 		</div>
 		<center>
                   <button type="submit" class="btn btn-primary">Simpan Data</button>
@@ -588,8 +580,8 @@
 			<br>
     <div id="footer">
       <div class="container">
-			<div class="span11" style="background-color: #e3e3e3">
-			<center><h5>Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+		<div class="span11">
+			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
       </div>
     </div>

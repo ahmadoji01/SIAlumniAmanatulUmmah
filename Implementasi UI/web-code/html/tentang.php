@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,6 +19,9 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
+		background: url(../assets/img/bg.jpg) no-repeat;
+		background-size: 300% 300%;
+		background-position: center top;
       }
 
       /* Wrapper for page content to push down footer */
@@ -36,9 +38,6 @@
       #footer {
         height: 60px;
       }
-      #footer {
-        background-color: #f5f5f5;
-      }
 	  .logo{
 		width : 290px;
 		height : 290px;
@@ -52,9 +51,7 @@
           padding-right: 20px;
         }
       }
-
-
-
+	  
       /* Custom page CSS
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
@@ -121,12 +118,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="beranda.php">SI-HIMAH</a>
+            <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
                 <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
                 <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
-                <li class="active"><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li class="active"><a href="tentang.php"> <i class="icon-bookmark icon-white"> </i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -168,18 +165,10 @@
 			  </ul>
 				
 			</div><!--/.nav-collapse -->
-		  
-		
-
-		  
-		  
-		  
         </div>
       </div>
 	 </div>
-	
-		
-		
+	 
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
@@ -192,7 +181,7 @@
         </div>
 			<div class="row-fluid">
 			<div class="span6">
-			<center><h4>Tentang Kami</h4></center>
+			<center><h3>Tentang Kami</h3></center>
 			<p><h5>Sistem Informasi Himpunan Alumni Amanatul Ummah (SI-Himah)</h5>merupakan portal utama dalam mengelola informasi alumni sekolah. Melalui SI-Himah pengguna akan dapat mengakses data pribadinya serta mengubahnya sesuai dengan hak aksesnya.</p>
 
 			<p>Keberadaan SI-Himah sebagai e-services gate system secara langsung akan berdampak pada efektifitas dan efisiensi pengelolaan informasi data alumni. Sehingga sistem informasi ini akan dirancang dan diimplementasikan sesuai dengan standar yang telah diberlakukan dalam SI-Himah.</p>
@@ -200,7 +189,7 @@
 			<p>Setiap pengguna akan memiliki personal dashboard. Pengaturan hak akses pengguna berdasarkan kategori dan level pengguna dapat diatur dengan menggunakan SI-Himah. Kontrol pengguna yang menggunakan Sistem Informasi yang ada dalam SI-Himah dapat dilakukan dan direkam.</p>
 			</div>
 			<div class="span6">
-			<center><h4>Hubungi Kami</h4></center>
+			<center><h3>Hubungi Kami</h3></center>
 				<table>
                   <tbody style=" font-size:14px">
                       
@@ -252,13 +241,10 @@
     <div id="footer">
       <div class="container">
 		<br><br><br>
-		<div class="span11" style="background-color: #e3e3e3">
-			<center><h5>Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+		<div class="span11">
+			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
-		
-		
       </div>
-	 
     </div>
 
 

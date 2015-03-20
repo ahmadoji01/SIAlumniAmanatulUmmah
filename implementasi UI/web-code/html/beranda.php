@@ -18,10 +18,14 @@
 
       html,
       body {
-        height: 100%;
+		height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-      }
-
+		
+		background: url(../assets/img/bg.jpg) no-repeat;
+		background-size: 300% 300%;
+		background-position: center top;
+	  }
+	  
       /* Wrapper for page content to push down footer */
       #wrap {
         min-height: 100%;
@@ -34,18 +38,15 @@
       /* Set the fixed height of the footer here */
       #push,
       #footer {
-        height: 60px;
+		  height: 30px;
       }
-      #footer {
-        background-color: #f5f5f5;
-      }
-	  img{
-		width: 30px;
-		height: 30px;
-	  }
 	  .logo{
 		width : 290px;
 		height : 290px;
+	  }
+	  .logo-navbar{
+		width : 25px;
+		height : 25px;
 	  }
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
@@ -68,6 +69,7 @@
       }
       .container .credit {
         margin: 20px 0;
+		
       }
 
       code {
@@ -125,10 +127,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="beranda.php">SI-HIMAH</a>
+			
+            <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+					
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
+                <li class="active"><a href="beranda.php"><i class="icon-home icon-white"></i> Beranda</a></li>
                 <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
                 <li><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
               </ul>
@@ -172,12 +176,7 @@
 			  </ul>
 				
 			</div><!--/.nav-collapse -->
-		  
-		
 
-		  
-		  
-		  
         </div>
       </div>
 	 </div>
@@ -220,12 +219,9 @@
 			
 		<div class="row-fluid">
         <div class="span2"></div>
-        <div class="span4">
+        <div class="span4" >
           <p><a class="btn btn-large btn-block btn-primary" href="ubahdatapribadi.php">Mengubah Data Pribadi</a></p>
           <p>Menu ini digunakan untuk mengubah data pribadi setiap alumni agar data yang tersimpan menjadi data yang valid dan update.</p>
-          
-		  
-		  
        </div>
 	   <div class="span4">
           <p><a class="btn btn-large btn-block btn-primary" href="uploadfoto.php">Upload Foto</a></p>
@@ -239,22 +235,21 @@
 
     <div id="footer">
       <div class="container">
-        <p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" class="img-rounded"> Himah Pusat &nbsp</a> 
+        <br><br>
+		<p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp</a> 
 		
 		
-		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" class="img-rounded"> @himahpusat </a> </p>
+		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
 		
-		<div class="span11" style="background-color: #e3e3e3">
-			<center><h5>Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+		<div class="span11">
+			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
 		
 		
       </div>
-	 
+		
     </div>
 
 
-
-   
   </body>
 </html>
