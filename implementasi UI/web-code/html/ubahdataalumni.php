@@ -21,6 +21,9 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
+		background: url(../assets/img/bg.jpg) no-repeat;
+		background-size: 300% 300%;
+		background-position: center top;
       }
 
       /* Wrapper for page content to push down footer */
@@ -37,13 +40,6 @@
       #footer {
         height: 60px;
       }
-      #footer {
-        background-color: #f5f5f5;
-      }
-	  img{
-		width: 60px;
-		height: 60px;
-	  }
 	  .logo{
 		width : 300px;
 		height : 300px;
@@ -145,7 +141,7 @@
 	
 				<li>
 					<div class="btn-group">
-					<a href="profil.php" class="btn btn-primary"><i class="icon-user icon-white"></i></a>
+					<a href="profil.php" class="btn btn-primary"><i class="icon-user icon-white"></i> Admin</a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="ubahdataadmin.php"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
@@ -335,7 +331,7 @@
                         
 						<!--Kuliah-->
 						<div class="control-group">
-                            <label class="control-label" for="inputKuliah" style="text-align: left">Kuliah</label>
+                            <label class="control-label" for="inputKuliah" style="text-align: left">Kuliah<br><em>*Teknik Informatika - ITS</em></label>
                             <div class="controls">
                                 <textarea class="input-xlarge" rows="4" id="inputKuliah" name="inputKuliah" placeholder="Kuliah"> </textarea>
                             </div>
@@ -580,8 +576,8 @@
 			<br>
     <div id="footer">
       <div class="container">
-			<div class="span11" style="background-color: #e3e3e3">
-			<center><h5>Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+			<div class="span11">
+			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
       </div>
     </div>

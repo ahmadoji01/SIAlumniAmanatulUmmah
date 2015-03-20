@@ -339,9 +339,9 @@
                         
 						<!--Kuliah-->
 						<div class="control-group">
-                            <label class="control-label" for="inputKuliah" style="text-align: left">Kuliah</label>
+                            <label class="control-label" for="inputKuliah" style="text-align: left">Kuliah<br><em>*Teknik Informatika - ITS</em></label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputKuliah" name="inputKuliah" placeholder="Kuliah"> </textarea>
+                                <textarea class="input-xlarge" rows="4" id="inputKuliah" name="inputKuliah"></textarea>
                             </div>
                         </div>
 						
