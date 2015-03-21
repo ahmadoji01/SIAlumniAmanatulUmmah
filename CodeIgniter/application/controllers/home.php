@@ -11,8 +11,14 @@
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
 			if ($username==false) $this->load->view('view_login');
-			else if ($username[0]=='A') $this->load->view('view_berandaadmin');
-			else $this->load->view('view_beranda');
+			else if ($username[0]=='A') 
+			{
+				$this->load->view('view_berandaadmin',array('NamaLengkap' => $this->session->userdata('namalengkap')));
+			}
+			else 
+			{
+				$this->load->view('view_beranda',array('NamaLengkap' => $this->session->userdata('namalengkap')));
+			}
 		}
 		function sign_in()
 		{			
