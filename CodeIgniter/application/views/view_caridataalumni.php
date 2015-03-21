@@ -172,13 +172,13 @@
 				
 				<div class="span4">
 				
-				<form class="form-horizontal">
+				<form class="form-horizontal" method="post" action="ubahdataalumni">
 					
 					<!--Cari Nama-->
 					<div class="control-group">
 						<label class="control-label" for="inputNama" style="text-align: left"> Nama</label>
 							<div class="controls">
-								<input class="input-xlarge" type="text" id="inputNama" placeholder="Nama">
+								<input class="input-xlarge" type="text" id="inputNama" name="inputNama" placeholder="Nama">
 							</div>
 					</div>
 					
@@ -204,7 +204,7 @@
 					<div class="control-group">
 					<label class="control-label" for="inputCabang" style="text-align: left"> Cabang PTN/PTS</label>
 							<div class="controls"> 
-								<select class="input-xlarge" id="inputLembaga">
+								<select class="input-xlarge" id="inputCabang">
 										<option>Surabaya</option>
 										<option>Sidoarjo</option>
 										<option>Mojokerto</option>
@@ -240,12 +240,15 @@
 			<!--Hasil Pencarian-->
 			<div class="well" style="max-width: 600px; margin: 0 auto 10px;">
             <div class="caption">
-                <h3>Hasil Pencarian 'jabir'</h3>
+                <?php 
+					if($status == 0)
+						echo "<h3>Silakan masukkan pencarian</h3>";
+					else
+						echo "<h3>Hasil pencarian '$NamaCari'</h3>";
+				?>
 				
                 <table class="table table-striped table-condensed">
 					<div class="pull-right">
-					<a  href="#########ubahdataalumni.php"> <span class="label label-inverse"><i class="icon-edit icon-white"></i> Ubah Data</span></a>
-					<a  href="#myModal" class="label label-important" data-toggle="modal"><i class="icon-trash icon-white"></i> Hapus Data</a>
 					
 					<!--Modal-->
 					<!-- Button to trigger modal -->
@@ -272,6 +275,10 @@
 					
 					
 					</div>
+					<?php foreach($query->result() as $row): 
+						
+						echo '
+						
 						<tr>
 							<td style="font-size:14px; vertical-align:middle; width: 5px;" rowspan="8">1</td>
 							<td style= "width: 100px;" rowspan="8">
@@ -282,28 +289,28 @@
 							
 						</tr>
                          <tr>
-							<td style="font-size:14px;" colspan="2"><strong>Nama : Muhammad Jabir Al Haiyan</strong> 
+							<td style="font-size:14px;" colspan="2"><strong>Nama : '. $row->NamaLengkap .'</strong> 
 								<!-- <a href="pesan.php"><i class="icon-envelope"></i></a> -->
 							</td>
 						 </tr>
 						 <tr>
-                            <td style="font-size:12px;" colspan="2">Lembaga : MA Unggulan Amanatul Ummah Surabaya
+                            <td style="font-size:12px;" colspan="2">Lembaga : '. $row->Lembaga .'
 							</td>
                          </tr>
 						 <tr>
-                            <td style="font-size:12px;" colspan="2">Cabang PTN/PTS : Surabaya
+                            <td style="font-size:12px;" colspan="2">Cabang PTN/PTS : '. $row->Cabang .'
 							</td>
                          </tr>
 						 <tr>
-                            <td style="font-size:12px;" colspan="2">Alamat : Jalan Smea No. 27, Wonokromo, Surabaya
+                            <td style="font-size:12px;" colspan="2">Alamat : '. $row->AlamatSekarang .'
 							</td>
                          </tr>
 						 <tr>
-                            <td style="font-size:12px;" colspan="2">No. HP : +6289679093686
+                            <td style="font-size:12px;" colspan="2">No. HP : '. $row->NoHP .'
 							</td>
                          </tr>
 						 <tr>
-                            <td style="font-size:12px;" colspan="2">Email : jabiralhayyan27@gmail.com
+                            <td style="font-size:12px;" colspan="2">Email : '. $row->Email .'
 							</td>
                          </tr>
 			
@@ -321,7 +328,8 @@
 								</span>
                             </td>
 							</tr>
-						
+						';
+						endforeach; ?>
 					</table>
 				</div>					
             </div>

@@ -68,16 +68,37 @@
 		}
 		public function ubahdataalumni()
 		{
+			$this->load->model('Mahasiswa');
+			$nama = $this->input->post('inputNama');
+			$lembaga = $this->input->post('inputLembaga');
+			$cabang = $this->input->post('inputCabang');
+			$this->Mahasiswa->setName($nama);
+			$this->Mahasiswa->setLembaga($lembaga);
+			$this->Mahasiswa->setCabang($cabang);
+			
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
+			
+			$data['query'] = $this->Mahasiswa->searchMhs();
+			$data['NamaLengkap'] = $this->session->userdata('namalengkap');
+			$data['NamaCari'] = $nama;
+			$data['status'] = 0;
 			if ($username==false)
 			{
 				$this->load->helper('url');
 				redirect('home','location');
 			}
-			else if ($username[0]=='A')
+			else if($username[0]=='A' && $nama == '' && $lembaga == '' && $cabang == '')
 			{
-				$this->load->view('view_caridataalumni',array('NamaLengkap' => $this->session->userdata('namalengkap')));
+				$data['status'] = 0;
+				$this->load->view('view_caridataalumni', $data);
+	
+			}
+			else if($username[0]=='A' && $data['query']->num_rows()>0)
+			{
+				$data['status'] = 1;
+				$this->load->view('view_caridataalumni', $data);
+	
 			}
 			else 
 			{
