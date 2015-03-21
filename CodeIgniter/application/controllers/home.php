@@ -30,7 +30,9 @@
 				$password = $this->input->post('password');
 				if ($username=='')
 				{
-					header('location : ../home');
+					//header('location : ../home');
+					$this->load->helper('url');
+					redirect('home','location');
 				}
 				else if ($username[0]=='A')
 				{
@@ -49,10 +51,14 @@
 							$this->session->set_userdata($newdata);
 						}
 						//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
+						$this->load->helper('url');
+						redirect('home','location');
 					}
 					else 
 					{
 						//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
+						$this->load->helper('url');
+						redirect('home','location');
 					}
 				}
 				else
@@ -72,21 +78,28 @@
 							$this->session->set_userdata($newdata);
 						}
 						//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
+						$this->load->helper('url');
+						redirect('home','location');
 					}
 					else 
 					{
 						//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
+						$this->load->helper('url');
+						redirect('home','location');
 					}
 				}
 			}
 			else if ($username[0]=='A')
 			{
 				//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
-				
+				$this->load->helper('url');
+				redirect('home','location');
 			}
 			else 
 			{
 				//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
+				$this->load->helper('url');
+				redirect('home','location');
 			}
 		}
 		function sign_out()
@@ -95,8 +108,8 @@
 			$array_of_userdata = $this->session->all_userdata();
 			$this->session->unset_userdata($array_of_userdata);
 			//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
-			//$this->load->helper('../home');
-			redirect('../home','location');
+			$this->load->helper('url');
+			redirect('home','location');
 		}
 	}
 

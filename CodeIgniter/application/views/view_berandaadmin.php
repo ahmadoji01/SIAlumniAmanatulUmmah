@@ -133,7 +133,7 @@
 						<li class="divider"></li>
 						<li class="nav-header">Akun</li>
 						
-						<li><a href="#"><i class="icon-off"></i> Keluar</a></li>
+						<li><a href="home/sign_out"><i class="icon-off"></i> Keluar</a></li>
 					</ul>
 					</div>
 				</li>
