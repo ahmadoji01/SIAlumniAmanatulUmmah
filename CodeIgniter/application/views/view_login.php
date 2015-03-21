@@ -87,10 +87,10 @@
 	
 	<div id="footer">
 		
-		<p class="text-right"> <a href="https://www.facebook.com/himahpusat" target="_blank"> <img src="assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp </a> 
+		<p class="text-right"> <a href="https://www.facebook.com/himahpusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp </a> 
 		
 		
-		 <a href="https://twitter.com/himahpusat" target="_blank"> <img src="assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
+		 <a href="https://twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
 		
 	</div>
 		<br><br><br>
