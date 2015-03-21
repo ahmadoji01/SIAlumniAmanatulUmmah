@@ -20,7 +20,7 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		background: url(../../assets/img/bg.jpg) no-repeat;
+		background: url(../../assets/img/bg.jpg) repeat;
 		background-size: 300% 300%;
 		background-position: center top;
       }
