@@ -102,12 +102,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="berandaadmin.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+            <a class="brand" href="home"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="berandaadmin.php"><i class="icon-home icon-white"></i> Beranda</a></li>
+                <li class="active"><a href="home"><i class="icon-home icon-white"></i> Beranda</a></li>
  
-                <li><a href="tentangadmin.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li><a href="pilihadmin/tentang"> <i class="icon-bookmark"> </i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -120,15 +120,14 @@
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
 					
-						<li><a href="ubahdataadmin.php"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
-						<li><a href="caridataalumni.php"><i class="icon-pencil"></i> Mengubah Data Alumni</a></li>
-						<li><a href="tambahakun.php"><i class="icon-pencil"></i> Menambah Akun</a></li>
-						
+						<li><a href="pilihadmin/ubahdataadmin"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
+						<li><a href="pilihadmin/tambahakun"><i class="icon-pencil"></i> Menambah Akun</a></li>
+						<li><a href="pilihadmin/ubahdataalumni"><i class="icon-pencil"></i> Mengubah Data Alumni</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
 						
-						<li><a href="ubahdataadmin.php"><i class="icon-lock"></i> Mengubah Password</a></li>
+						<li><a href="pilihadmin/ubahdataadmin"><i class="icon-lock"></i> Mengubah Password</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Akun</li>
@@ -164,16 +163,16 @@
 		<div class="row-fluid">
         <!--<div class="span2"></div>-->
         <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="ubahdataadmin.php">Mengubah Data Admin</a></p>
+          <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataadmin">Mengubah Data Admin</a></p>
           <p>Menu ini digunakan untuk mengubah data pribadi setiap admin agar data yang tersimpan menjadi data yang valid dan update.</p>
         </div>
 		<div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="tambahakun.php">Menambah Akun</a></p>
+          <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/tambahakun">Menambah Akun</a></p>
           <p>Menu ini digunakan untuk membuat akun alumni yang baru, agar data setiap alumni dapat disimpan di sistem ini.</p>
         </div>
 		
 	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="caridataalumni.php">Mengubah Data Alumni</a></p>
+          <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataalumni">Mengubah Data Alumni</a></p>
           <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
        </div>
 	   <!--<div class="span2"></div>-->

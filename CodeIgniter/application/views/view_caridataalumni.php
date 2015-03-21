@@ -9,8 +9,8 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -20,7 +20,7 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		background: url(../assets/img/bg.jpg) no-repeat;
+		background: url(../../assets/img/bg.jpg) no-repeat;
 		background-size: 300% 300%;
 		background-position: center top;
       }
@@ -73,24 +73,24 @@
 	  
 
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
 	
 	    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap-transition.js"></script>
+    <script src="../../assets/js/bootstrap-alert.js"></script>
+    <script src="../../assets/js/bootstrap-modal.js"></script>
+    <script src="../../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../assets/js/bootstrap-tab.js"></script>
+    <script src="../../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../assets/js/bootstrap-popover.js"></script>
+    <script src="../../assets/js/bootstrap-button.js"></script>
+    <script src="../../assets/js/bootstrap-collapse.js"></script>
+    <script src="../../assets/js/bootstrap-carousel.js"></script>
+    <script src="../../assets/js/bootstrap-typeahead.js"></script>
 	
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -98,11 +98,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon-himah.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../../assets/ico/favicon-himah.jpg">
   </head>
 
   <body>
@@ -120,12 +120,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="berandaadmin.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+            <a class="brand" href="../home"> <img src="../../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li> <a href="berandaadmin.php"><i class="icon-home"></i> Beranda</a></li>
+                <li> <a href="../home"><i class="icon-home"></i> Beranda</a></li>
                 
-                <li><a href="tentangadmin.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li><a href="../pilihadmin/tentang"> <i class="icon-bookmark"> </i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -134,22 +134,22 @@
 				
 				<li>
 					<div class="btn-group">
-					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i><?php echo $NamaLengkap . " "; ?>(sebagai admin)</a>
+					<a href="#" class="btn btn-primary"><i class="icon-user icon-white"></i><?php echo $NamaLengkap . " "; ?>(sebagai admin)</a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="ubahdataadmin.php"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
-						<li><a href="caridataalumni.php"><i class="icon-pencil"></i> Mengubah Data Alumni</a></li>
-						<li><a href="tambahakun.php"><i class="icon-pencil"></i> Menambah Akun</a></li>
-						
+						<li><a href="../pilihadmin/ubahdataadmin"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
+						<li><a href="../pilihadmin/tambahakun"><i class="icon-pencil"></i> Menambah Akun</a></li>
+						<li><a href="../pilihadmin/ubahdataalumni"><i class="icon-pencil"></i> Mengubah Data Alumni</a></li>
+							
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
 						
-						<li><a href="ubahdataadmin.php"><i class="icon-lock"></i> Mengubah Password</a></li>
+						<li><a href="../pilihadmin/ubahdataadmin"><i class="icon-lock"></i> Mengubah Password</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Akun</li>
 						
-						<li><a href="#"><i class="icon-off"></i> Keluar</a></li>
+						<li><a href="../home/sign_out"><i class="icon-off"></i> Keluar</a></li>
 					</ul>
 					</div>
 				</li>
@@ -244,7 +244,7 @@
 				
                 <table class="table table-striped table-condensed">
 					<div class="pull-right">
-					<a  href="ubahdataalumni.php"> <span class="label label-inverse"><i class="icon-edit icon-white"></i> Ubah Data</span></a>
+					<a  href="#########ubahdataalumni.php"> <span class="label label-inverse"><i class="icon-edit icon-white"></i> Ubah Data</span></a>
 					<a  href="#myModal" class="label label-important" data-toggle="modal"><i class="icon-trash icon-white"></i> Hapus Data</a>
 					
 					<!--Modal-->
@@ -276,7 +276,7 @@
 							<td style="font-size:14px; vertical-align:middle; width: 5px;" rowspan="8">1</td>
 							<td style= "width: 100px;" rowspan="8">
 								<center>
-									<img src="../assets/img/default-foto.png" width="200px" height="200px">
+									<img src="../../assets/img/default-foto.png" width="200px" height="200px">
 								</center>
 							</td>
 							
@@ -311,13 +311,13 @@
 							<tr>
 							<td style="width: 70px;">
                                 <span>
-									<a href="https://www.facebook.com/jabiralhayyan"> <img src="../assets/img/logo-fb.png" width="30px" height="30px"></a>
+									<a href="https://www.facebook.com/jabiralhayyan"> <img src="../../assets/img/logo-fb.png" width="30px" height="30px"></a>
 								</span> 
                                 <span>
-									<a href="-"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px"></a>
+									<a href="-"> <img src="../../assets/img/logo-twitter.png" width="30px" height="30px"></a>
 								</span>
                                 <span>
-									<a href="-"> <img src="../assets/img/logo-blog.png" width="30px" height="30px"></a>
+									<a href="-"> <img src="../../assets/img/logo-blog.png" width="30px" height="30px"></a>
 								</span>
                             </td>
 							</tr>
