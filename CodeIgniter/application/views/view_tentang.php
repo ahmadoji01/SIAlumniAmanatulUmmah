@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Beranda | SI Himpunan Alumni Amanatul Ummah</title>
+    <title>Tentang | SI Himpunan Alumni Amanatul Ummah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -18,14 +17,13 @@
 
       html,
       body {
-		height: 100%;
+        height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		
 		background: url(../assets/img/bg.jpg) no-repeat;
 		background-size: 300% 300%;
 		background-position: center top;
-	  }
-	  
+      }
+
       /* Wrapper for page content to push down footer */
       #wrap {
         min-height: 100%;
@@ -38,15 +36,11 @@
       /* Set the fixed height of the footer here */
       #push,
       #footer {
-		  height: 30px;
+        height: 60px;
       }
 	  .logo{
 		width : 290px;
 		height : 290px;
-	  }
-	  .logo-navbar{
-		width : 25px;
-		height : 25px;
 	  }
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
@@ -57,9 +51,7 @@
           padding-right: 20px;
         }
       }
-
-
-
+	  
       /* Custom page CSS
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
@@ -69,7 +61,6 @@
       }
       .container .credit {
         margin: 20px 0;
-		
       }
 
       code {
@@ -127,14 +118,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-			
             <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
-					
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="beranda.php"><i class="icon-home icon-white"></i> Beranda</a></li>
+                <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
                 <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
-                <li><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li class="active"><a href="tentang.php"> <i class="icon-bookmark icon-white"> </i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -176,80 +165,90 @@
 			  </ul>
 				
 			</div><!--/.nav-collapse -->
-
         </div>
       </div>
 	 </div>
-	
-	<!--Modal-->
-	 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">#News!</h3>
-			  </div>
-			  <div class="modal-body">
-				<div class="alert alert-info">
-					<p><strong>Silahkan memperbarui informasi tentang diri anda untuk keperluan administrasi sekolah dan organisasi</strong></p>
-					<p>Terima-Kasih.</p>
-				</div>
-			  </div>
-				<div class="modal-footer">
-				<button href="ubahdatapribadi.php" class="btn btn-primary">Update Data</button>
-				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-			  </div>
-			</div>
-        
-		<script>
-            $('#myModal').modal({
-            })
-        </script>
-		<!--End Modal-->
-		
-		
+	 
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
           <center>
-		  <h3>Selamat Datang di Sistem Informasi </h3>
+		  <h3>Sistem Informasi </h3>
 		  <h3>Himpunan Alumni Amanatul Ummah (SI-HIMAH)</h3>
 		  
 			<a><img class="logo" src="../assets/img/logo-himah.png"> </a>
 		  </center>
         </div>
+			<div class="row-fluid">
+			<div class="span6">
+			<center><h3>Tentang Kami</h3></center>
+			<p><h5>Sistem Informasi Himpunan Alumni Amanatul Ummah (SI-Himah)</h5>merupakan portal utama dalam mengelola informasi alumni sekolah. Melalui SI-Himah pengguna akan dapat mengakses data pribadinya serta mengubahnya sesuai dengan hak aksesnya.</p>
+
+			<p>Keberadaan SI-Himah sebagai e-services gate system secara langsung akan berdampak pada efektifitas dan efisiensi pengelolaan informasi data alumni. Sehingga sistem informasi ini akan dirancang dan diimplementasikan sesuai dengan standar yang telah diberlakukan dalam SI-Himah.</p>
 			
-		<div class="row-fluid">
-        <div class="span2"></div>
-        <div class="span4" >
-          <p><a class="btn btn-large btn-block btn-primary" href="ubahdatapribadi.php">Mengubah Data Pribadi</a></p>
-          <p>Menu ini digunakan untuk mengubah data pribadi setiap alumni agar data yang tersimpan menjadi data yang valid dan update.</p>
-       </div>
-	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="uploadfoto.php">Upload Foto</a></p>
-          <p>Menu ini digunakan untuk mengubah foto profil akun alumni.</p>
-       </div>
-	   <div class="span2"></div>
-      </div>
+			<p>Setiap pengguna akan memiliki personal dashboard. Pengaturan hak akses pengguna berdasarkan kategori dan level pengguna dapat diatur dengan menggunakan SI-Himah. Kontrol pengguna yang menggunakan Sistem Informasi yang ada dalam SI-Himah dapat dilakukan dan direkam.</p>
+			</div>
+			<div class="span6">
+			<center><h3>Hubungi Kami</h3></center>
+				<table>
+                  <tbody style=" font-size:14px">
+                      
+					  <!--Alamat-->
+					  <tr>
+                          <td style="width: 200px;"><i class="icon-map-marker"></i> Alamat</td>
+                          <td>:</td>
+                          <td style="width: 450px;">Jalan Siwalankerto Utara 56, Wonocolo, Surabaya</td>
+                      </tr>
+                      
+					  <!--No. HP-->
+					  <tr>
+                          <td style="width: 200px;"><i class="icon-bookmark"></i> No HP</td>
+                          <td>:</td>
+                          <td style="width: 450px;">+62857 3330 0675</td>
+                      </tr>
+					  
+					  <!--No. Fax-->
+                      <tr>
+                          <td style="width: 200px;"> <i class="icon-print"></i> No. Fax</td>
+                          <td>:</td>
+                          <td style="width: 450px;">(031) 7549332</td>
+                      </tr>
+                      
+					  <!--Email-->
+					  <tr>
+                          <td style="width: 200px;"><i class="icon-envelope"></i> Email</td>
+                          <td>:</td>
+                          <td style="width: 450px;">himah.pusat@gmail.com</td>
+                      </tr>
+					  
+                  </tbody>                 
+              </table>
+				<br>
+				  <a href="http://www.facebook.com/himah.pusat" data-toggle="tooltip" title="Himah Pusat"><img src="../assets/img/logo-fb.png" width="70px" height="70px"></a>
+                  
+				  <a href="http://www.twitter.com/himahpusat" data-toggle="tooltip" title="@himahpusat"><img src="../assets/img/logo-twitter.png" width="70px" height="70px"></a>
+                  
+				  <a href="http://himahpusat.blogspot.com" data-toggle="tooltip" title="himahpusat.blogspot.com"><img src="../assets/img/logo-blog.png" width="70px" height="70px"></a>
+                  
+				  <a href="himah.pusat@gmail.com" data-toggle="tooltip" title="himah.pusat@gmail.com"><img src="../assets/img/logo-email.png" width="70px" height="70px"></a>        
+
+			</div>	
+		</div>
 	</div>
 
     </div>
 
     <div id="footer">
       <div class="container">
-        <br><br>
-		<p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp</a> 
-		
-		
-		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
-		
+		<br><br><br>
 		<div class="span11">
 			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
-		
-		
       </div>
-		
     </div>
 
 
+
+   
   </body>
 </html>

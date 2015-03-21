@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Beranda | SI Himpunan Alumni Amanatul Ummah</title>
+    <title>Upload Foto | SI Himpunan Alumni Amanatul Ummah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -18,14 +18,13 @@
 
       html,
       body {
-		height: 100%;
+        height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		
 		background: url(../assets/img/bg.jpg) no-repeat;
 		background-size: 300% 300%;
 		background-position: center top;
-	  }
-	  
+      }
+
       /* Wrapper for page content to push down footer */
       #wrap {
         min-height: 100%;
@@ -38,15 +37,11 @@
       /* Set the fixed height of the footer here */
       #push,
       #footer {
-		  height: 30px;
+        height: 60px;
       }
 	  .logo{
-		width : 290px;
-		height : 290px;
-	  }
-	  .logo-navbar{
-		width : 25px;
-		height : 25px;
+		width : 300px;
+		height : 300px;
 	  }
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
@@ -69,7 +64,6 @@
       }
       .container .credit {
         margin: 20px 0;
-		
       }
 
       code {
@@ -79,9 +73,9 @@
 	  
 
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    
 	
-	 <!-- Le javascript
+	<!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../assets/js/jquery.js"></script>
@@ -98,7 +92,7 @@
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
 
-
+	
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="../assets/js/html5shiv.js"></script>
@@ -122,19 +116,17 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-			
             <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
-					
-            <div class="nav-collapse  navbar-responsive-collapse collapse">
+            <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="beranda.php"><i class="icon-home icon-white"></i> Beranda</a></li>
+                <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
                 <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
-                <li><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li><a href="tentang.php"><i class="icon-bookmark"></i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -175,81 +167,46 @@
 			
 			  </ul>
 				
-			</div><!--/.nav-collapse -->
-
-        </div>
-      </div>
-	 </div>
-	
-	<!--Modal-->
-	 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			  <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">#News!</h3>
-			  </div>
-			  <div class="modal-body">
-				<div class="alert alert-info">
-					<p><strong>Silahkan memperbarui informasi tentang diri anda untuk keperluan administrasi sekolah dan organisasi</strong></p>
-					<p>Terima-Kasih.</p>
-				</div>
-			  </div>
-				<div class="modal-footer">
-				<button href="ubahdatapribadi.php" class="btn btn-primary">Update Data</button>
-				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-			  </div>
-			</div>
-        
-		<script>
-            $('#myModal').modal({
-            })
-        </script>
-		<!--End Modal-->
-		
-		
-      <!-- Begin page content -->
-      <div class="container">
-        <div class="page-header">
-          <center>
-		  <h3>Selamat Datang di Sistem Informasi </h3>
-		  <h3>Himpunan Alumni Amanatul Ummah (SI-HIMAH)</h3>
+			</div> <!--/.nav-collapse -->
 		  
-			<a><img class="logo" src="../assets/img/logo-himah.png"> </a>
-		  </center>
+		  
         </div>
-			
-		<div class="row-fluid">
-        <div class="span2"></div>
-        <div class="span4" >
-          <p><a class="btn btn-large btn-block btn-primary" href="ubahdatapribadi.php">Mengubah Data Pribadi</a></p>
-          <p>Menu ini digunakan untuk mengubah data pribadi setiap alumni agar data yang tersimpan menjadi data yang valid dan update.</p>
-       </div>
-	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="uploadfoto.php">Upload Foto</a></p>
-          <p>Menu ini digunakan untuk mengubah foto profil akun alumni.</p>
-       </div>
-	   <div class="span2"></div>
       </div>
-	</div>
+		</div>
 
-    </div>
+	<!--Upload Foto-->
+	<div class="container">
+			<center><h2>Upload Foto</h2></center>
+			<br>
+		<div class="row">
+			<div class="span12">
+				<ul class="nav nav-list bs-docs-sidenav">
+					<li>
+						<center><img src="../assets/img/default-foto.png" width="200px" height="200px" class="img-polaroid">
+							<h4>Unggah Foto :</h4>
+							<p style="font-size: 16px; color: #003bb3"><i class="icon-ok"></i> Ukuran max 300 kB <br>
+							<i class="icon-ok"></i> Tipe file : jpg. jpeg, png</p></center>
+					<form class="form-search" action="update_photo.php" method="post" enctype="multipart/form-data">
+						<center>
+							<input type="file" name="file" id="file"><br>
+							<button class="btn btn-primary" type="submit" data-loading-text="Loading...">Unggah</button>
+						</center>
+					</form>
+					</li>
+				</ul>       
+			</div>
+		</div>
+	</div>
+	
+	</div>
 
     <div id="footer">
       <div class="container">
-        <br><br>
-		<p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp</a> 
-		
-		
-		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
-		
 		<div class="span11">
-			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+			<center><h5 style="background-color: #e3e3e3"> Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
-		
-		
       </div>
-		
     </div>
-
 
   </body>
 </html>

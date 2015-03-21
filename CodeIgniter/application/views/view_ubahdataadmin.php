@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Beranda | SI Himpunan Alumni Amanatul Ummah</title>
+    <title>Ubah Data Admin | SI Himpunan Alumni Amanatul Ummah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -97,16 +98,16 @@
       <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
           <div class="container">
-            <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </a>
+            </button>
             <a class="brand" href="berandaadmin.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="berandaadmin.php"><i class="icon-home icon-white"></i> Beranda</a></li>
- 
+                <li> <a href="berandaadmin.php"><i class="icon-home"></i> Beranda</a></li>
+                
                 <li><a href="tentangadmin.php"> <i class="icon-bookmark"> </i> Tentang</a></li
               </ul>
 			</div>
@@ -116,14 +117,12 @@
 				
 				<li>
 					<div class="btn-group">
-					<a href="#" class="btn btn-primary"><i class="icon-user icon-white"></i> Admin</a>
+					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i> Admin</a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
-					
 						<li><a href="ubahdataadmin.php"><i class="icon-pencil"></i> Mengubah Data Admin</a></li>
 						<li><a href="caridataalumni.php"><i class="icon-pencil"></i> Mengubah Data Alumni</a></li>
 						<li><a href="tambahakun.php"><i class="icon-pencil"></i> Menambah Akun</a></li>
-						
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
@@ -137,11 +136,8 @@
 					</ul>
 					</div>
 				</li>
-				
-				
-				
-				
-			 </ul>
+			
+			  </ul>
 				
 			</div><!--/.nav-collapse -->
 		  
@@ -152,48 +148,65 @@
 
       <!-- Begin page content -->
       <div class="container">
-        <div class="page-header">
-          <center>
-		  <h3>Selamat Datang di Sistem Informasi </h3>
-		  <h3>Himpunan Alumni Amanatul Ummah (SI-HIMAH)</h3>
-		  
-			<a><img class="logo" src="../assets/img/logo-himah.png"> </a>
-		  </center>
-        </div>
+        <center><h2>&nbsp &nbsp Mengubah Data Admin</h2></center>
+				<br>
+			<div class="row-fluid">
+				<div class="span4"> </div>
+				<div class="span4">
+				<form class="form-horizontal">
+					<div class="control-group">
+						<label class="control-label" for="inputNama" style="text-align: left"> Nama</label>
+							<div class="controls">
+								<input type="text" id="inputNama" value="" placeholder="Nama">
+							</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inputUsername" style="text-align: left"> Username</label>
+							<div class="controls">
+								<input type="text" id="inputUsername" value="" placeholder="Username">
+							</div>
+					</div>
+					<div class="control-group">
+							<label class="control-label" for="inputPasswordLama" style="text-align: left"> Password Lama</label>
+						<div class="controls">
+							<input type="password" id="inputPasswordLama" value="" placeholder="Password Lama">
+						</div>
+					</div>
+					<div class="control-group">
+							<label class="control-label" for="inputPasswordBaru" style="text-align: left"> Password Baru</label>
+						<div class="controls">
+							<input type="password" id="inputPasswordBaru" value="" placeholder="Password Baru">
+						</div>
+					</div>
+					<div class="control-group">
+								<label class="control-label" for="inputKonfirmasiPassword" style="text-align: left"> Konfirmasi Password</label>
+							<div class="controls">
+								<input type="password" id="inputKonfirmasiPassword" value="" placeholder="Konfirmasi Password">
+							</div>
+						</div>
+				
+				  <div class="control-group">
+					<div class="controls">
+					  <button type="submit" class="btn btn-primary"> Simpan</button>
+					</div>
+				  </div>
+				</form>
+				
+				</div>
+				
+				<div class="span4"> </div>
+				
+			</div>
 			
-		<div class="row-fluid">
-        <!--<div class="span2"></div>-->
-        <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="ubahdataadmin.php">Mengubah Data Admin</a></p>
-          <p>Menu ini digunakan untuk mengubah data pribadi setiap admin agar data yang tersimpan menjadi data yang valid dan update.</p>
-        </div>
-		<div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="tambahakun.php">Menambah Akun</a></p>
-          <p>Menu ini digunakan untuk membuat akun alumni yang baru, agar data setiap alumni dapat disimpan di sistem ini.</p>
-        </div>
-		
-	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="caridataalumni.php">Mengubah Data Alumni</a></p>
-          <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
-       </div>
-	   <!--<div class="span2"></div>-->
-      </div>
 	</div>
 
     </div>
 
     <div id="footer">
       <div class="container">
-	  <br><br>
-        <p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp</a> 
-		
-		
-		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
-		
 		<div class="span11">
 			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
 		</div>
-		
 		
       </div>
 	 

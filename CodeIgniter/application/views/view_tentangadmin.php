@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Beranda | SI Himpunan Alumni Amanatul Ummah</title>
+    <title>Tentang | SI Himpunan Alumni Amanatul Ummah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -105,9 +105,9 @@
             <a class="brand" href="berandaadmin.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="berandaadmin.php"><i class="icon-home icon-white"></i> Beranda</a></li>
+                <li><a href="berandaadmin.php"><i class="icon-home"></i> Beranda</a></li>
  
-                <li><a href="tentangadmin.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li class="active"><a href="tentangadmin.php"> <i class="icon-bookmark icon-white"> </i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -151,53 +151,81 @@
 	 </div>
 
       <!-- Begin page content -->
+      <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
           <center>
-		  <h3>Selamat Datang di Sistem Informasi </h3>
+		  <h3>Sistem Informasi </h3>
 		  <h3>Himpunan Alumni Amanatul Ummah (SI-HIMAH)</h3>
 		  
 			<a><img class="logo" src="../assets/img/logo-himah.png"> </a>
 		  </center>
         </div>
+			<div class="row-fluid">
+			<div class="span6">
+			<center><h4>Tentang Kami</h4></center>
+			<p><h5>Sistem Informasi Himpunan Alumni Amanatul Ummah (SI-Himah)</h5>merupakan portal utama dalam mengelola informasi alumni sekolah. Melalui SI-Himah pengguna akan dapat mengakses data pribadinya serta mengubahnya sesuai dengan hak aksesnya.</p>
+
+			<p>Keberadaan SI-Himah sebagai e-services gate system secara langsung akan berdampak pada efektifitas dan efisiensi pengelolaan informasi data alumni. Sehingga sistem informasi ini akan dirancang dan diimplementasikan sesuai dengan standar yang telah diberlakukan dalam SI-Himah.</p>
 			
-		<div class="row-fluid">
-        <!--<div class="span2"></div>-->
-        <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="ubahdataadmin.php">Mengubah Data Admin</a></p>
-          <p>Menu ini digunakan untuk mengubah data pribadi setiap admin agar data yang tersimpan menjadi data yang valid dan update.</p>
-        </div>
-		<div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="tambahakun.php">Menambah Akun</a></p>
-          <p>Menu ini digunakan untuk membuat akun alumni yang baru, agar data setiap alumni dapat disimpan di sistem ini.</p>
-        </div>
-		
-	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="caridataalumni.php">Mengubah Data Alumni</a></p>
-          <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
-       </div>
-	   <!--<div class="span2"></div>-->
-      </div>
-	</div>
+			<p>Setiap pengguna akan memiliki personal dashboard. Pengaturan hak akses pengguna berdasarkan kategori dan level pengguna dapat diatur dengan menggunakan SI-Himah. Kontrol pengguna yang menggunakan Sistem Informasi yang ada dalam SI-Himah dapat dilakukan dan direkam.</p>
+			</div>
+			<div class="span6">
+			<center><h4>Hubungi Kami</h4></center>
+				<table>
+                  <tbody style=" font-size:14px">
+                      
+					  <!--Alamat-->
+					  <tr>
+                          <td style="width: 200px;"><i class="icon-map-marker"></i> Alamat</td>
+                          <td>:</td>
+                          <td style="width: 450px;">Jalan Siwalankerto Utara 56, Wonocolo, Surabaya</td>
+                      </tr>
+                      
+					  <!--No. HP-->
+					  <tr>
+                          <td style="width: 200px;"><i class="icon-bookmark"></i> No HP</td>
+                          <td>:</td>
+                          <td style="width: 450px;">+62857 3330 0675</td>
+                      </tr>
+					  
+					  <!--No. Fax-->
+                      <tr>
+                          <td style="width: 200px;"> <i class="icon-print"></i> No. Fax</td>
+                          <td>:</td>
+                          <td style="width: 450px;">(031) 7549332</td>
+                      </tr>
+                      
+					  <!--Email-->
+					  <tr>
+                          <td style="width: 200px;"><i class="icon-envelope"></i> Email</td>
+                          <td>:</td>
+                          <td style="width: 450px;">himah.pusat@gmail.com</td>
+                      </tr>
+					  
+                  </tbody>                 
+              </table>
+				<br>
+				  <a href="http://www.facebook.com/himah.pusat" data-toggle="tooltip" title="Himah Pusat"><img src="../assets/img/logo-fb.png" width="70px" height="70px"></a>
+                  
+				  <a href="http://www.twitter.com/himahpusat" data-toggle="tooltip" title="@himahpusat"><img src="../assets/img/logo-twitter.png" width="70px" height="70px"></a>
+                  
+				  <a href="http://himahpusat.blogspot.com" data-toggle="tooltip" title="himahpusat.blogspot.com"><img src="../assets/img/logo-blog.png" width="70px" height="70px"></a>
+                  
+				  <a href="himah.pusat@gmail.com" data-toggle="tooltip" title="himah.pusat@gmail.com"><img src="../assets/img/logo-email.png" width="70px" height="70px"></a>        
 
-    </div>
-
-    <div id="footer">
-      <div class="container">
-	  <br><br>
-        <p class="text-right"> <a href="http://www.facebook.com/himah.pusat" target="_blank"> <img src="../assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp</a> 
-		
-		
-		<a href="http://www.twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
-		
-		<div class="span11">
-			<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+			</div>	
 		</div>
-		
-		
-      </div>
-	 
+	</div>
     </div>
+	<div id="footer">
+		  <div class="container">
+			<br><br><br>
+			<div class="span11">
+				<center><h5 style="background-color: #e3e3e3">Copyright &copy; Manajemen Proyek Perangkat Lunak (D) 2015</h5></center>
+			</div>
+		  </div>
+		</div>
 
 
 

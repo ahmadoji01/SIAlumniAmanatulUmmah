@@ -46,11 +46,6 @@
 		max-width: 70%;
 	  }
 	  
-	  img{
-		width: 30px;
-		height: 30px;
-	  }
-	  
 	  .btn{
 		background: #85FE03;
 		color : #FFFFFF;
@@ -81,24 +76,24 @@
     <div class="container">
 
       <form class="form-signin" method="post" action="home/sign_in">
-        <input name="username" type="text" class="input-block-level" placeholder="Username">
-        <input name="password" type="password" class="input-block-level" placeholder="Password">
+        <input type="text" class="input-block-level" placeholder="Username">
+        <input type="password" class="input-block-level" placeholder="Password">
         <!--label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label-->
         <button class="btn btn-block" type="submit" >Login</button>		
       </form>
 	
-		
+	
 	<div id="footer">
 		
-		<p class="text-right"> <a href="https://www.facebook.com/himahpusat" target="_blank"> <img src="../assets/img/logo-fb.png" class="img-rounded"> Himah Pusat &nbsp </a> 
+		<p class="text-right"> <a href="https://www.facebook.com/himahpusat" target="_blank"> <img src="assets/img/logo-fb.png" width="30px" height="30px" class="img-rounded"> Himah Pusat &nbsp </a> 
 		
 		
-		 <a href="https://twitter.com/himahpusat" target="_blank"> <img src="../assets/img/logo-twitter.png" class="img-rounded"> @himahpusat </a> </p>
+		 <a href="https://twitter.com/himahpusat" target="_blank"> <img src="assets/img/logo-twitter.png" width="30px" height="30px" class="img-rounded"> @himahpusat </a> </p>
 		
 	</div>
-		<br>
+		<br><br><br>
 	</div>
 	
 	
