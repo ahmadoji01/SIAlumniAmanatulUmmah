@@ -275,12 +275,23 @@
 					
 					
 					</div>
-					<?php foreach($query->result() as $row): 
-						
-						echo '
-						
+					<?php $counter = 0; foreach($query->result() as $row): 
+						$counter++;
+						/*echo '
 						<tr>
-							<td style="font-size:14px; vertical-align:middle; width: 5px;" rowspan="8">1</td>
+							<th>
+								<a  href="#########ubahdataalumni.php"> <span class="label label-inverse"><i class="icon-edit icon-white"></i> Ubah Data</span></a>
+							</th>
+							<th>
+								<a  href="#myModal" class="label label-important" data-toggle="modal"><i class="icon-trash icon-white"></i> Hapus Data</a>
+							</th>
+						</tr>';*/
+						echo '
+						<tr>
+						</tr>
+						<tr>
+							
+							<td style="font-size:14px; vertical-align:middle; width: 5px;" rowspan="8">'.$counter.'</td>
 							<td style= "width: 100px;" rowspan="8">
 								<center>
 									<img src="../../assets/img/default-foto.png" width="200px" height="200px">
