@@ -114,9 +114,9 @@
 			{
 				$query = $this->db->query
 					("
-						SELECT Distinct(NamaLengkap), Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
 						FROM Alumni
-						WHERE (NamaLengkap Like '%$this->nama%') AND
+						WHERE NamaLengkap Like '%$this->nama%' AND
 							Lembaga = '$this->lembaga' AND
 							Cabang = '$this->cabang'
 					");
