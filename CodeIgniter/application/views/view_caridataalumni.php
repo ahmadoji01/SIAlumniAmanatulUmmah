@@ -186,7 +186,8 @@
 					<div class="control-group">
 					<label class="control-label" for="inputLembaga" style="text-align: left"> Lembaga</label>
 							<div class="controls"> 
-								<select class="input-xlarge" id="inputLembaga">
+								<select class="input-xlarge" id="inputLembaga" name="inputLembaga">
+										<option>-</option>
 										<option>MA Unggulan Amanatul Ummah Surabaya	</option>
 										<option>MA Akselerasi Amanatul Ummah Surabaya</option>
 										<option>SMA Unggulan Amanatul Ummah Surabaya</option>
@@ -204,7 +205,8 @@
 					<div class="control-group">
 					<label class="control-label" for="inputCabang" style="text-align: left"> Cabang PTN/PTS</label>
 							<div class="controls"> 
-								<select class="input-xlarge" id="inputCabang">
+								<select class="input-xlarge" id="inputCabang" name="inputCabang">
+										<option>-</option>
 										<option>Surabaya</option>
 										<option>Sidoarjo</option>
 										<option>Mojokerto</option>
@@ -225,7 +227,7 @@
 				<br>
 				  <div class="control-group">
 					<div class="controls">
-					  <button type="submit" class="btn btn-large btn-primary"> Cari</button>
+					  <button type="submit" class="btn btn-large btn-primary">Cari</button>
 					</div>
 				  </div>
 				 
@@ -243,8 +245,10 @@
                 <?php 
 					if($status == 0)
 						echo "<h3>Silakan masukkan pencarian</h3>";
-					else
-						echo "<h3>Hasil pencarian '$NamaCari'</h3>";
+					else if($status == 1)
+						echo "<h3>Hasil pencarian</h3>";
+					else if($status == 2)
+						echo "<h3>Data tidak ditemukan</h3>";
 				?>
 				
                 <table class="table table-striped table-condensed">
@@ -275,7 +279,7 @@
 					
 					
 					</div>
-					<?php $counter = 0; foreach($query->result() as $row): 
+					<?php if($status == 1) {$counter = 0; foreach($query->result() as $row): 
 						$counter++;
 						/*echo '
 						<tr>
@@ -288,45 +292,41 @@
 						</tr>';*/
 						echo '
 						<tr>
-						</tr>
-						<tr>
-							
-							<td style="font-size:14px; vertical-align:middle; width: 5px;" rowspan="8">'.$counter.'</td>
+							<td style="font-size:14px; vertical-align:left; width: 5px;" rowspan="8">'.$counter.'</td>
 							<td style= "width: 100px;" rowspan="8">
 								<center>
 									<img src="../../assets/img/default-foto.png" width="200px" height="200px">
 								</center>
 							</td>
-							
 						</tr>
-                         <tr>
+                        <tr>
 							<td style="font-size:14px;" colspan="2"><strong>Nama : '. $row->NamaLengkap .'</strong> 
 								<!-- <a href="pesan.php"><i class="icon-envelope"></i></a> -->
 							</td>
-						 </tr>
-						 <tr>
+						</tr>
+						<tr>
                             <td style="font-size:12px;" colspan="2">Lembaga : '. $row->Lembaga .'
 							</td>
-                         </tr>
-						 <tr>
+                        </tr>
+						<tr>
                             <td style="font-size:12px;" colspan="2">Cabang PTN/PTS : '. $row->Cabang .'
 							</td>
-                         </tr>
-						 <tr>
+                        </tr>
+						<tr>
                             <td style="font-size:12px;" colspan="2">Alamat : '. $row->AlamatSekarang .'
 							</td>
-                         </tr>
-						 <tr>
+                        </tr>
+						<tr>
                             <td style="font-size:12px;" colspan="2">No. HP : '. $row->NoHP .'
 							</td>
-                         </tr>
-						 <tr>
+                        </tr>
+						<tr>
                             <td style="font-size:12px;" colspan="2">Email : '. $row->Email .'
 							</td>
-                         </tr>
+                        </tr>
 			
 					
-							<tr>
+						<tr>
 							<td style="width: 70px;">
                                 <span>
 									<a href="https://www.facebook.com/jabiralhayyan"> <img src="../../assets/img/logo-fb.png" width="30px" height="30px"></a>
@@ -338,9 +338,9 @@
 									<a href="-"> <img src="../../assets/img/logo-blog.png" width="30px" height="30px"></a>
 								</span>
                             </td>
-							</tr>
+						</tr>
 						';
-						endforeach; ?>
+						endforeach;} ?>
 					</table>
 				</div>					
             </div>
