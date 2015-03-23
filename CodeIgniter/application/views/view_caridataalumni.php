@@ -187,6 +187,7 @@
 					<label class="control-label" for="inputLembaga" style="text-align: left"> Lembaga</label>
 							<div class="controls"> 
 								<select class="input-xlarge" id="inputLembaga">
+										<option> </option>
 										<option>MA Unggulan Amanatul Ummah Surabaya	</option>
 										<option>MA Akselerasi Amanatul Ummah Surabaya</option>
 										<option>SMA Unggulan Amanatul Ummah Surabaya</option>
@@ -205,6 +206,7 @@
 					<label class="control-label" for="inputCabang" style="text-align: left"> Cabang PTN/PTS</label>
 							<div class="controls"> 
 								<select class="input-xlarge" id="inputCabang">
+										<option> </option>
 										<option>Surabaya</option>
 										<option>Sidoarjo</option>
 										<option>Mojokerto</option>
