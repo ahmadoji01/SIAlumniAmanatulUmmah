@@ -47,16 +47,93 @@
 			$this->db->close();
 			return $query;
 		}
-		public function searchMhs()
+		public function searchMhs($status)
 		{
 			$this->load->database();
-			$query = $this->db->query
+			if($status == 1)
+			{
+				$query = $this->db->query
 					("
 						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
 						FROM Alumni
 						WHERE 
-							NamaLengkap = '$this->nama'
+							NamaLengkap Like '%$this->nama%'
 					");
+			}
+			else if($status == 2)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE 
+							Cabang = '$this->cabang'
+					");
+			}
+			else if($status == 3)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE 
+							Lembaga = '$this->lembaga'
+					");
+			}
+			else if($status == 4)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE Lembaga = '$this->lembaga' AND
+							Cabang = '$this->cabang'
+					");
+			}
+			else if($status == 5)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE NamaLengkap Like '%$this->nama%' AND
+							Cabang = '$this->cabang'
+					");
+			}
+			else if($status == 6)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE NamaLengkap Like '%$this->nama%' AND
+							Lembaga = '$this->lembaga'
+					");
+			}
+			else if($status == 7)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE NamaLengkap Like '%$this->nama%' AND
+							Lembaga = '$this->lembaga' AND
+							Cabang = '$this->cabang'
+					");
+			}
+			else if($status == 8)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE NamaLengkap = '$this->nama' AND
+							Lembaga = '$this->lembaga' AND
+							Cabang = '$this->cabang'
+					");
+			}
+			
+			
 			$this->db->close();
 			return $query;
 		}
