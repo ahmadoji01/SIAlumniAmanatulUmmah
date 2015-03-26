@@ -74,9 +74,17 @@
   <body>
     
     <div class="container">
-
+	
       <form class="form-signin" method="post" action="home/sign_in">
-        <input name="username" type="text" class="input-block-level" placeholder="Username">
+        <!--p style="background-color:#66FF66;">Halo dunia</p>
+		<p style="background-color:red;">Error</p-->
+		<?php
+			if ($username_kosong) echo "<p style='background-color:#FF4747;'>" . $username_kosong . "</p>";
+			if ($password_kosong) echo "<p style='background-color:#FF4747;'>" . $password_kosong . "</p>";
+			if ($username_password_salah) echo "<p style='background-color:#FF4747;'>" . $username_password_salah . "</p>";
+			if ($logout_berhasil) echo "<p style='background-color:#66FF66;'>" . $logout_berhasil . "</p>";
+		?>
+		<input name="username" type="text" class="input-block-level" placeholder="Username">
         <input name="password" type="password" class="input-block-level" placeholder="Password">
         <!--label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me

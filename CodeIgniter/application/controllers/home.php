@@ -10,7 +10,17 @@
 		{
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
-			if ($username==false) $this->load->view('view_login');
+			if ($username==false)
+			{
+				$notifikasi;
+				//pesan gagal
+				$notifikasi['username_kosong'] = $this->session->flashdata('username_kosong');
+				$notifikasi['password_kosong'] = $this->session->flashdata('password_kosong');
+				$notifikasi['username_password_salah'] = $this->session->flashdata('username_password_salah');
+				//pesan berhasil
+				$notifikasi['logout_berhasil'] = $this->session->flashdata('logout_berhasil');
+				$this->load->view('view_login',$notifikasi);
+			}
 			else if ($username[0]=='A') 
 			{
 				$this->load->view('view_berandaadmin',array('NamaLengkap' => $this->session->userdata('namalengkap')));
@@ -28,8 +38,10 @@
 			{
 				$username = $this->input->post('username');
 				$password = $this->input->post('password');
-				if ($username=='')
+				if ($username=='' || $password=='')
 				{
+					if ($username=='') $this->session->set_flashdata('username_kosong','Maaf! Bagian username harus diisi');
+					if ($password=='') $this->session->set_flashdata('password_kosong','Maaf! Bagian password harus diisi');
 					//header('location : ../home');
 					$this->load->helper('url');
 					redirect('home','location');
@@ -39,7 +51,7 @@
 					$this->load->model('Admin');
 					$this->Admin->setUsername($username);
 					$this->Admin->setPassword($password);
-					$query = $this->Admin->sendToDatabase();
+					$query = $this->Admin->getFromDatabase();
 					if ($query->num_rows()>0)
 					{
 						foreach ($query->result() as $row)
@@ -56,6 +68,7 @@
 					}
 					else 
 					{
+						$this->session->set_flashdata('username_password_salah','Maaf! Username atau password anda salah');
 						//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
 						$this->load->helper('url');
 						redirect('home','location');
@@ -63,10 +76,10 @@
 				}
 				else
 				{
-					$this->load->model('Mahasiswa');
-					$this->Mahasiswa->setUsername($username);
-					$this->Mahasiswa->setPassword($password);
-					$query = $this->Mahasiswa->sendToDatabase();
+					$this->load->model('Alumni');
+					$this->Alumni->setUsername($username);
+					$this->Alumni->setPassword($password);
+					$query = $this->Alumni->getFromDatabase();
 					if ($query->num_rows()>0)
 					{
 						foreach ($query->result() as $row)
@@ -83,6 +96,7 @@
 					}
 					else 
 					{
+						$this->session->set_flashdata('username_password_salah','Maaf! Username atau password anda salah');
 						//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
 						$this->load->helper('url');
 						redirect('home','location');
@@ -105,8 +119,10 @@
 		function sign_out()
 		{
 			$this->load->library('session');
-			$array_of_userdata = $this->session->all_userdata();
-			$this->session->unset_userdata($array_of_userdata);
+			//$array_of_userdata = $this->session->all_userdata();
+			//$this->session->unset_userdata($array_of_userdata);
+			$this->session->unset_userdata('username');
+			$this->session->set_flashdata('logout_berhasil','Anda berhasil logout');
 			//header('location : ../home'); nggak bisa gini kalo di CodeIgniter
 			$this->load->helper('url');
 			redirect('home','location');
