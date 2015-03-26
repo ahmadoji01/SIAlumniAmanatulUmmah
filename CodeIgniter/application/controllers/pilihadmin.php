@@ -68,13 +68,13 @@
 		}
 		public function ubahdataalumni()
 		{
-			$this->load->model('Mahasiswa');
+			$this->load->model('Alumni');
 			$nama = $this->input->post('inputNama');
 			$lembaga = $this->input->post('inputLembaga');
 			$cabang = $this->input->post('inputCabang');
-			$this->Mahasiswa->setName($nama);
-			$this->Mahasiswa->setLembaga($lembaga);
-			$this->Mahasiswa->setCabang($cabang);
+			$this->Alumni->setName($nama);
+			$this->Alumni->setLembaga($lembaga);
+			$this->Alumni->setCabang($cabang);
 			$data['debug'] = '';
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
@@ -82,39 +82,39 @@
 			if($nama == '' && $lembaga == '' && $cabang == '')
 			{
 
-				$data['query'] = $this->Mahasiswa->searchMhs(7);
+				$data['query'] = $this->Alumni->searchMhs(7);
 			}
 			else if($nama != '' && $lembaga[0] == '-' && $cabang[0] == '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(1);
+				$data['query'] = $this->Alumni->searchMhs(1);
 			}
 			else if($nama == '' && $lembaga[0] == '-' && $cabang[0] != '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(2);
+				$data['query'] = $this->Alumni->searchMhs(2);
 			}
 			else if($nama == '' && $lembaga[0] != '-' && $cabang[0] == '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(3);
+				$data['query'] = $this->Alumni->searchMhs(3);
 			}
 			else if($nama == '' && $lembaga[0] != '-' && $cabang[0] != '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(4);
+				$data['query'] = $this->Alumni->searchMhs(4);
 			}
 			else if($nama != '' && $lembaga[0] == '-' && $cabang[0] != '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(5);
+				$data['query'] = $this->Alumni->searchMhs(5);
 			}
 			else if($nama != '' && $lembaga[0] != '-' && $cabang[0] == '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(6);
+				$data['query'] = $this->Alumni->searchMhs(6);
 			}
 			else if($nama == '' && $lembaga[0] == '-' && $cabang[0] == '-')
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(8);
+				$data['query'] = $this->Alumni->searchMhs(8);
 			}
 			else
 			{
-				$data['query'] = $this->Mahasiswa->searchMhs(7);
+				$data['query'] = $this->Alumni->searchMhs(7);
 			}
 			
 			$data['NamaLengkap'] = $this->session->userdata('namalengkap');

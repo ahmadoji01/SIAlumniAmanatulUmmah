@@ -185,14 +185,9 @@
 					<!--Cari Lembaga-->
 					<div class="control-group">
 					<label class="control-label" for="inputLembaga" style="text-align: left"> Lembaga</label>
-							<div class="controls"> 
-<<<<<<< HEAD
-								<select class="input-xlarge" id="inputLembaga">
-										<option> </option>
-=======
+							<div class="controls">
 								<select class="input-xlarge" id="inputLembaga" name="inputLembaga">
 										<option>-</option>
->>>>>>> origin/master
 										<option>MA Unggulan Amanatul Ummah Surabaya	</option>
 										<option>MA Akselerasi Amanatul Ummah Surabaya</option>
 										<option>SMA Unggulan Amanatul Ummah Surabaya</option>
@@ -209,14 +204,9 @@
 					<!--Cari Cabang-->
 					<div class="control-group">
 					<label class="control-label" for="inputCabang" style="text-align: left"> Cabang PTN/PTS</label>
-							<div class="controls"> 
-<<<<<<< HEAD
-								<select class="input-xlarge" id="inputCabang">
-										<option> </option>
-=======
+							<div class="controls">
 								<select class="input-xlarge" id="inputCabang" name="inputCabang">
 										<option>-</option>
->>>>>>> origin/master
 										<option>Surabaya</option>
 										<option>Sidoarjo</option>
 										<option>Mojokerto</option>

@@ -18,7 +18,7 @@
 		{
 			$this->password = $password;
 		}
-		public function sendToDatabase()
+		public function getFromDatabase()
 		{
 			$this->load->database();
 			$query = $this->db->query
