@@ -38,5 +38,20 @@
 				$this->load->view('view_carialumni', $data);
 			}
 		}
+		public function uploadfoto()
+		{
+			$this->load->library('session');
+			$username = $this->session->userdata('username');
+			$data['NamaLengkap'] = $this->session->userdata('namalengkap');
+			if ($username==false)
+			{
+				$this->load->helper('url');
+				redirect('home','location');
+			}
+			else
+			{
+				$this->load->view('view_uploadfoto', $data);
+			}
+		}
 	}
 ?>

@@ -9,8 +9,8 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -20,7 +20,7 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		background: url(../assets/img/bg.jpg) no-repeat;
+		background: url(../../assets/img/bg.jpg) no-repeat;
 		background-size: 300% 300%;
 		background-position: center top;
       }
@@ -78,19 +78,19 @@
 	<!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap-transition.js"></script>
+    <script src="../../assets/js/bootstrap-alert.js"></script>
+    <script src="../../assets/js/bootstrap-modal.js"></script>
+    <script src="../../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../assets/js/bootstrap-tab.js"></script>
+    <script src="../../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../assets/js/bootstrap-popover.js"></script>
+    <script src="../../assets/js/bootstrap-button.js"></script>
+    <script src="../../assets/js/bootstrap-collapse.js"></script>
+    <script src="../../assets/js/bootstrap-carousel.js"></script>
+    <script src="../../assets/js/bootstrap-typeahead.js"></script>
 
 	
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -99,11 +99,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon-himah.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../../assets/ico/favicon-himah.jpg">
   </head>
 
   <body>
@@ -121,10 +121,10 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+            <a class="brand" href="beranda.php"> <img src="../../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
+                <li><a href="../home"><i class="icon-home"></i> Beranda</a></li>
                 <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
                 <li><a href="tentang.php"><i class="icon-bookmark"></i> Tentang</a></li
               </ul>
@@ -134,10 +134,10 @@
 			<ul class="nav pull-right">
 				
 				<li>
-					<form class="form-search nav">
+					<form class="form-search nav" method="post" action="caridataalumni">
 						<div class=" navbar-search input-prepend">
 						<button type="submit" class="btn"><i class="icon-search"></i></button>
-						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni">
+						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni" name="inputNama" id="inputNama">
 						</div>
 					</form>
 				</li>
@@ -150,7 +150,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="ubahdatapribadi.php"><i class="icon-pencil"></i> Mengubah Data</a></li>
 						
-						<li><a href="uploadfoto.php"><i class="icon-camera"></i> Upload Foto</a></li>
+						<li class="active"><a href=""><i class="icon-camera"></i> Upload Foto</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
@@ -182,7 +182,7 @@
 			<div class="span12">
 				<ul class="nav nav-list bs-docs-sidenav">
 					<li>
-						<center><img src="../assets/img/default-foto.png" width="200px" height="200px" class="img-polaroid">
+						<center><img src="../../assets/img/default-foto.png" width="200px" height="200px" class="img-polaroid">
 							<h4>Unggah Foto :</h4>
 							<p style="font-size: 16px; color: #003bb3"><i class="icon-ok"></i> Ukuran max 300 kB <br>
 							<i class="icon-ok"></i> Tipe file : jpg. jpeg, png</p></center>

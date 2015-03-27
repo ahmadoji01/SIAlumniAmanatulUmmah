@@ -151,7 +151,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="ubahdatapribadi.php"><i class="icon-pencil"></i> Mengubah Data</a></li>
 						
-						<li><a href="uploadfoto.php"><i class="icon-camera"></i> Upload Foto</a></li>
+						<li><a href="uploadfoto"><i class="icon-camera"></i> Upload Foto</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>

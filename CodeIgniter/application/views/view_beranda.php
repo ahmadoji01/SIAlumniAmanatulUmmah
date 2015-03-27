@@ -132,7 +132,7 @@
 					
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="beranda.php"><i class="icon-home icon-white"></i> Beranda</a></li>
+                <li class="active"><a href="home"><i class="icon-home icon-white"></i> Beranda</a></li>
                 <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
                 <li><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
               </ul>
@@ -220,11 +220,11 @@
 		<div class="row-fluid">
         <div class="span2"></div>
         <div class="span4" >
-          <p><a class="btn btn-large btn-block btn-primary" href="ubahdatapribadi.php">Mengubah Data Pribadi</a></p>
+          <p><a class="btn btn-large btn-block btn-primary" href="pilihalumni/uploadfoto">Mengubah Data Pribadi</a></p>
           <p>Menu ini digunakan untuk mengubah data pribadi setiap alumni agar data yang tersimpan menjadi data yang valid dan update.</p>
        </div>
 	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="uploadfoto.php">Upload Foto</a></p>
+          <p><a class="btn btn-large btn-block btn-primary" href="pilihalumni/uploadfoto">Upload Foto</a></p>
           <p>Menu ini digunakan untuk mengubah foto profil akun alumni.</p>
        </div>
 	   <div class="span2"></div>
