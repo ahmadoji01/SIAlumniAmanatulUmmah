@@ -8,6 +8,7 @@
 		private $lembaga;
 		private $cabang;
 		private $namalengkap;
+		private $tahunlulus;
 		
 		public function __construct()
 		{
@@ -33,12 +34,16 @@
 		{
 			$this->cabang = $cabang;
 		}
+		public function setTahunLulus($tahunlulus)
+		{
+			$this->tahunlulus = $tahunlulus;
+		}
 		public function getFromDatabase()
 		{
 			$this->load->database();
 			$query = $this->db->query
 					("
-						SELECT Username, NamaLengkap
+						SELECT Username, NamaLengkap, TahunLulus
 						FROM Alumni
 						WHERE 
 							Username = '$this->username' AND
@@ -130,6 +135,16 @@
 						WHERE NamaLengkap = '$this->nama' AND
 							Lembaga = '$this->lembaga' AND
 							Cabang = '$this->cabang'
+					");
+			}
+			else if($status == 9)
+			{
+				$query = $this->db->query
+					("
+						SELECT NamaLengkap, Lembaga, Cabang, AlamatSekarang, NoHP, Email
+						FROM Alumni
+						WHERE NamaLengkap Like '%$this->nama%' AND 
+							TahunLulus = '$this->tahunlulus'
 					");
 			}
 			

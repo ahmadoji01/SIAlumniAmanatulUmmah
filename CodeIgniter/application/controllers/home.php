@@ -86,7 +86,8 @@
 						{
 							$newdata = array(
 										'username' => $row->Username,
-										'namalengkap' => $row->NamaLengkap
+										'namalengkap' => $row->NamaLengkap,
+										'tahunlulus' => $row->TahunLulus
 											);
 							$this->session->set_userdata($newdata);
 						}

@@ -142,10 +142,10 @@
 			<ul class="nav pull-right">
 				
 				<li>
-					<form class="form-search nav">
+					<form class="form-search nav" method="post" action="pilihalumni/caridataalumni">
 						<div class=" navbar-search input-prepend">
 						<button type="submit" class="btn"><i class="icon-search"></i></button>
-						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni">
+						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni" name="inputNama" id="inputNama">
 						</div>
 					</form>
 				</li>
