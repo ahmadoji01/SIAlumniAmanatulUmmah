@@ -150,7 +150,7 @@
 					<ul class="dropdown-menu">
 						<li><a href="ubahdatapribadi.php"><i class="icon-pencil"></i> Mengubah Data</a></li>
 						
-						<li class="active"><a href=""><i class="icon-camera"></i> Upload Foto</a></li>
+						<li class="active"><a href="uploadfoto"><i class="icon-camera"></i> Upload Foto</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
@@ -176,6 +176,28 @@
 
 	<!--Upload Foto-->
 	<div class="container">
+			<?php 
+			if($status == 1)
+			{
+				echo '<center><h4>Gambar berhasil diunggah</h4></center>';
+			}
+			else if($status == 2)
+			{
+				echo '<center><h4>Maaf terdapat kesalahan ketika mengunggah gambar</h4></center>';
+			}
+			else if($status == 3)
+			{
+				echo '<center><h4>Silakan pilih gambar yang akan diunggah</h4></center>';
+			}
+			else if($status == 4)
+			{
+				echo '<center><h4>Ukuran gambar terlalu besar</h4></center>';
+			}
+			else if($status == 5)
+			{
+				echo '<center><h4>Format file gambar tidak tepat</h4></center>';
+			}
+			?>
 			<center><h2>Upload Foto</h2></center>
 			<br>
 		<div class="row">
@@ -186,10 +208,10 @@
 							<h4>Unggah Foto :</h4>
 							<p style="font-size: 16px; color: #003bb3"><i class="icon-ok"></i> Ukuran max 300 kB <br>
 							<i class="icon-ok"></i> Tipe file : jpg. jpeg, png</p></center>
-					<form class="form-search" action="update_photo.php" method="post" enctype="multipart/form-data">
+					<form class="form-search" action="uploadfoto" method="post" enctype="multipart/form-data">
 						<center>
-							<input type="file" name="file" id="file"><br>
-							<button class="btn btn-primary" type="submit" data-loading-text="Loading...">Unggah</button>
+							<input type="file" name="fileToUpload" id="fileToUpload"><br>
+							<button class="btn btn-primary" type="submit" data-loading-text="Loading..." name="submit">Unggah</button>
 						</center>
 					</form>
 					</li>
