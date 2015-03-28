@@ -252,4 +252,16 @@
 
 
   </body>
+  <footer>
+	<?php
+		if ($ubah_data_pribadi_berhasil) echo "<script>
+													window.onload = fungsi_notifikasi;
+													
+													function fungsi_notifikasi()
+													{
+														alert(" . '"' . $ubah_data_pribadi_berhasil . '"' . ");
+													}
+											   </script>";									   
+	?>
+  </footer>
 </html>
