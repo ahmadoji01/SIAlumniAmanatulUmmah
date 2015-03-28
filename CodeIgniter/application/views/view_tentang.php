@@ -8,8 +8,8 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -19,7 +19,7 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		background: url(../assets/img/bg.jpg) no-repeat;
+		background: url(../../assets/img/bg.jpg) no-repeat;
 		background-size: 300% 300%;
 		background-position: center top;
       }
@@ -70,24 +70,24 @@
 	  
 
     </style>
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
 	
 	 <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap-transition.js"></script>
+    <script src="../../assets/js/bootstrap-alert.js"></script>
+    <script src="../../assets/js/bootstrap-modal.js"></script>
+    <script src="../../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../assets/js/bootstrap-tab.js"></script>
+    <script src="../../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../assets/js/bootstrap-popover.js"></script>
+    <script src="../../assets/js/bootstrap-button.js"></script>
+    <script src="../../assets/js/bootstrap-collapse.js"></script>
+    <script src="../../assets/js/bootstrap-carousel.js"></script>
+    <script src="../../assets/js/bootstrap-typeahead.js"></script>
 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -96,11 +96,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon-himah.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../../assets/ico/favicon-himah.jpg">
   </head>
 
   <body>
@@ -118,12 +118,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+            <a class="brand" href="../home"> <img src="../../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
-                <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
-                <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
-                <li class="active"><a href="tentang.php"> <i class="icon-bookmark icon-white"> </i> Tentang</a></li
+                <li><a href="../home"><i class="icon-home"></i> Beranda</a></li>
+                <li><a href="../pilihalumni/profil"><i class="icon-user"></i> Profil</a></li>
+                <li class="active"><a href="../pilihalumni/tentang"> <i class="icon-bookmark icon-white"> </i> Tentang</a></li
               </ul>
 			</div>
 				
@@ -142,22 +142,22 @@
 	
 				<li>
 					<div class="btn-group">
-					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i><?php echo $NamaLengkap; ?></a>
+					<a href="../pilihalumni/profil" class="btn btn-primary"><i class="icon-user icon-white"></i><?php echo $NamaLengkap; ?></a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="ubahdatapribadi.php"><i class="icon-pencil"></i> Mengubah Data</a></li>
+						<li><a href="../pilihalumni/ubahdatapribadi"><i class="icon-pencil"></i> Mengubah Data</a></li>
 						
-						<li><a href="uploadfoto.php"><i class="icon-camera"></i> Upload Foto</a></li>
+						<li><a href="../pilihalumni/uploadfoto"><i class="icon-camera"></i> Upload Foto</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
 						
-						<li><a href="ubahdatapribadi.php"><i class="icon-lock"></i> Mengubah Password</a></li>
+						<li><a href="../pilihalumni/ubahdatapribadi"><i class="icon-lock"></i> Mengubah Password</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Akun</li>
 						
-						<li><a href="#"><i class="icon-off"></i> Keluar</a></li>
+						<li><a href="../home/sign_out"><i class="icon-off"></i> Keluar</a></li>
 					</ul>
 					</div>
 				</li>
@@ -176,7 +176,7 @@
 		  <h3>Sistem Informasi </h3>
 		  <h3>Himpunan Alumni Amanatul Ummah (SI-HIMAH)</h3>
 		  
-			<a><img class="logo" src="../assets/img/logo-himah.png"> </a>
+			<a><img class="logo" src="../../assets/img/logo-himah.png"> </a>
 		  </center>
         </div>
 			<div class="row-fluid">
@@ -224,13 +224,13 @@
                   </tbody>                 
               </table>
 				<br>
-				  <a href="http://www.facebook.com/himah.pusat" data-toggle="tooltip" title="Himah Pusat"><img src="../assets/img/logo-fb.png" width="70px" height="70px"></a>
+				  <a href="http://www.facebook.com/himah.pusat" data-toggle="tooltip" title="Himah Pusat"><img src="../../assets/img/logo-fb.png" width="70px" height="70px"></a>
                   
-				  <a href="http://www.twitter.com/himahpusat" data-toggle="tooltip" title="@himahpusat"><img src="../assets/img/logo-twitter.png" width="70px" height="70px"></a>
+				  <a href="http://www.twitter.com/himahpusat" data-toggle="tooltip" title="@himahpusat"><img src="../../assets/img/logo-twitter.png" width="70px" height="70px"></a>
                   
-				  <a href="http://himahpusat.blogspot.com" data-toggle="tooltip" title="himahpusat.blogspot.com"><img src="../assets/img/logo-blog.png" width="70px" height="70px"></a>
+				  <a href="http://himahpusat.blogspot.com" data-toggle="tooltip" title="himahpusat.blogspot.com"><img src="../../assets/img/logo-blog.png" width="70px" height="70px"></a>
                   
-				  <a href="himah.pusat@gmail.com" data-toggle="tooltip" title="himah.pusat@gmail.com"><img src="../assets/img/logo-email.png" width="70px" height="70px"></a>        
+				  <a href="himah.pusat@gmail.com" data-toggle="tooltip" title="himah.pusat@gmail.com"><img src="../../assets/img/logo-email.png" width="70px" height="70px"></a>        
 
 			</div>	
 		</div>
