@@ -9,8 +9,8 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -20,7 +20,7 @@
       body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
-		background: url(../assets/img/bg.jpg) no-repeat;
+		background: url(../../assets/img/bg.jpg) no-repeat;
 		background-size: 300% 300%;
 		background-position: center top;
       }
@@ -78,19 +78,19 @@
 	<!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap-transition.js"></script>
+    <script src="../../assets/js/bootstrap-alert.js"></script>
+    <script src="../../assets/js/bootstrap-modal.js"></script>
+    <script src="../../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../../assets/js/bootstrap-tab.js"></script>
+    <script src="../../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../../assets/js/bootstrap-popover.js"></script>
+    <script src="../../assets/js/bootstrap-button.js"></script>
+    <script src="../../assets/js/bootstrap-collapse.js"></script>
+    <script src="../../assets/js/bootstrap-carousel.js"></script>
+    <script src="../../assets/js/bootstrap-typeahead.js"></script>
 
 	
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -99,11 +99,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon-himah.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../../assets/ico/favicon-himah.jpg">
   </head>
 
   <body>
@@ -121,12 +121,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="beranda.php"> <img src="../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+            <a class="brand" href="../home"> <img src="../../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="beranda.php"><i class="icon-home"></i> Beranda</a></li>
-                <li class="active"><a href="profil.php"><i class="icon-user icon-white"></i> Profil</a></li>
-                <li><a href="tentang.php"><i class="icon-bookmark"></i> Tentang</a></li
+                <li><a href="../home"><i class="icon-home"></i> Beranda</a></li>
+                <li class="active"><a href="../pilihalumni/profil"><i class="icon-user icon-white"></i> Profil</a></li>
+                <li><a href="../pilihalumni/tentang"><i class="icon-bookmark"></i> Tentang</a></li>
               </ul>
 			</div>
 				
@@ -148,19 +148,19 @@
 					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i> <?php echo $NamaLengkap; ?></a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="ubahdatapribadi.php"><i class="icon-pencil"></i> Mengubah Data</a></li>
+						<li><a href="../pilihalumni/ubahdatapribadi"><i class="icon-pencil"></i> Mengubah Data</a></li>
 						
-						<li><a href="uploadfoto.php"><i class="icon-camera"></i> Upload Foto</a></li>
+						<li><a href="../pilihalumni/uploadfoto"><i class="icon-camera"></i> Upload Foto</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
 						
-						<li><a href="ubahdatapribadi.php"><i class="icon-lock"></i> Mengubah Password</a></li>
+						<li><a href="../pilihalumni/ubahdatapribadi"><i class="icon-lock"></i> Mengubah Password</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Akun</li>
 						
-						<li><a href="#"><i class="icon-off"></i> Keluar</a></li>
+						<li><a href="../home/sign_out"><i class="icon-off"></i> Keluar</a></li>
 					</ul>
 					</div>
 				</li>
@@ -180,7 +180,7 @@
 			<div class="span12">
               <div class="span3">
               <center>
-                  <img src="../assets/img/default-foto.png" width="250px" height="250px" class="img-polaroid"><br>                             
+				  <img src="../../assets/img/default-foto.png" width="250px" height="250px" class="img-polaroid"><br>                             
               </center>
               <script>
               $(function() {
@@ -192,60 +192,60 @@
           
 		  <!--Kolom Kanan Informasi-->
 		  <blockquote>              
-              <h2>Muhammad Jabir Al Haiyan</h2>
-              <small class="text-info" style=" font-size:13px">Alumni Lembaga MA Unggulan Amanatul Ummah Surabaya 
-			  <a  href="ubahdatapribadi.php"> <span class="badge"><i class="icon-edit icon-white"></i> Mengubah Data</span></a></small>
+              <h2><?php echo $NamaLengkap;?></h2>
+              <small class="text-info" style=" font-size:13px"><?php echo ($Lembaga ? ("Alumni Lembaga " . $Lembaga) : "");?> 
+			  <a  href="../pilihalumni/ubahdatapribadi"> <span class="badge"><i class="icon-edit icon-white"></i> Mengubah Data</span></a></small>
               <table>
                   <tbody style=" font-size:14px">
                       <!--Nama-->
 					  <tr>
                           <td style="width: 200px;"><i class="icon-bookmark"></i> Nama</td>
                           <td>:</td>
-                          <td style="width: 450px;">Muhammad Jabir Al Haiyan</td>
+                          <td style="width: 450px;"><?php echo $NamaLengkap;?></td>
                       </tr>
                       
 					  <!--Lembaga-->
 					  <tr>
                           <td style="width: 200px;"><i class="icon-bookmark"></i> Lembaga</td>
                           <td>:</td>
-                          <td style="width: 450px;">MA Unggulan Amanatul Ummah Surabaya</td>
+                          <td style="width: 450px;"><?php echo ($Lembaga ? $Lembaga : "");?></td>
                       </tr>
 					  
 					  <!--Cabang-->
                       <tr>
                           <td style="width: 200px;"> <i class="icon-bookmark"></i> Cabang PTN/PTS</td>
                           <td>:</td>
-                          <td style="width: 450px;">Surabaya</td>
+                          <td style="width: 450px;"><?php echo ($Cabang ? $Cabang : "");?></td>
                       </tr>
                       
 					  <!--Alamat-->
 					  <tr>
                           <td style="width: 200px;"><i class="icon-bookmark"></i> Alamat Sekarang</td>
                           <td>:</td>
-                          <td style="width: 450px;">Jalan Keputih Tegal Bakti Dua nomor 3A, Sukolilo, Surabaya</td>
+                          <td style="width: 450px;"><?php echo ($AlamatSekarang ? $AlamatSekarang : "");?></td>
                       </tr>
 					  
 					  <!--No. HP-->
 					  <tr>
                           <td style="width: 200px;"><i class="icon-bookmark"></i> No. HP</td>
                           <td>:</td>
-                          <td style="width: 450px;">+6289679093686</td>
+                          <td style="width: 450px;">+62<?php echo ($NoHP ? $NoHP : "");?></td>
                       </tr>
 					  <!--Email-->
 					  <tr>
                           <td style="width: 200px;"><i class="icon-bookmark"></i> Email</td>
                           <td>:</td>
-                          <td style="width: 450px;">jabiralhaiyan@gmail.com</td>
+                          <td style="width: 450px;"><?php echo ($Email ? $Email : "");?></td>
                       </tr>
 					  
 					  
                   </tbody>                 
               </table>
               <br>
-                  <a href="https://www.facebook.com/jabiralhayyan" data-toggle="tooltip" title="Jabir Al Hayyan"><img src="../assets/img/logo-fb.png" width="50px" height="50px"></a>
-                  <a href="-" data-toggle="tooltip" title="-"><img src="../assets/img/logo-twitter.png" width="50px" height="50px"></a>
-                  <a href="http://-" data-toggle="tooltip" title="-"><img src="../assets/img/logo-blog.png" width="50px" height="50px"></a>
-                  <a href="#" data-toggle="tooltip" title="jabiralhayyan27@gmail.com"><img src="../assets/img/logo-email.png" width="50px" height="50px"></a>        
+                  <a href="<?php echo ($Facebook ? $Facebook : "");?>" data-toggle="tooltip" title="<?php echo ($Facebook ? $Facebook : "");?>"><img src="../../assets/img/logo-fb.png" width="50px" height="50px"></a>
+                  <a href="<?php echo ($Twitter ? $Twitter : "");?>" data-toggle="tooltip" title="<?php echo ($Twitter ? $Twitter : "");?>"><img src="../../assets/img/logo-twitter.png" width="50px" height="50px"></a>
+                  <a href="<?php echo ($Blog ? $Blog : "");?>" data-toggle="tooltip" title="<?php echo ($Blog ? $Blog : "");?>"><img src="../../assets/img/logo-blog.png" width="50px" height="50px"></a>
+                  <a href="<?php echo ($Email ? $Email : "");?>" data-toggle="tooltip" title="<?php echo ($Email ? $Email : "");?>"><img src="../../assets/img/logo-email.png" width="50px" height="50px"></a>        
           </blockquote>
               </div>
 
@@ -272,32 +272,32 @@
                       <tr>
                           <td style="width: 200px;"><i class="icon-tasks"></i> Kuliah</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($TempatKuliah ? $TempatKuliah : "");?></td>
                       </tr>
                       <tr>
                           <td style="width: 200px;"><i class="icon-tasks"></i> Aktif Organisasi</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($Kesibukan ? $Kesibukan : "");?></td>
                       </tr>
                       <tr>
                           <td style="width: 200px;"> <i class="icon-tasks"></i> Bekerja</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($TempatKerja ? $TempatKerja : "");?></td>
                       </tr>
                       <tr>
                           <td style="width: 200px;"><i class="icon-tasks"></i> Hobi</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($Hobi ? $Hobi : "");?></td>
                       </tr>
 					  <tr>
                           <td style="width: 200px;"><i class="icon-tasks"></i> Cita-Cita</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($Cita_Cita ? $Cita_Cita : "");?></td>
                       </tr>
 					  <tr>
                           <td style="width: 200px;"><i class="icon-tasks"></i> Motto</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($Motto ? $Motto : "");?></td>
                       </tr>
 					  
                   </tbody>                 
@@ -313,7 +313,7 @@
                       <tr>
                           <td style="width: 200px;"><i class="icon-star-empty"></i> Prestasi</td>
                           <td style="width: 1px;">:</td>
-                          <td>Juara I KIR di POLTEKES Surabaya, harapan II lomba KIR BOV Biologi ITS </td>
+                          <td><?php echo ($Prestasi ? $Prestasi : "");?> </td>
                       </tr>
                   </tbody>                 
               </table>
@@ -328,22 +328,22 @@
                       <tr>
                           <td style="width: 200px;"><i class="icon-th-list"></i> Nama Orang-Tua</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($NamaOrtu ? $NamaOrtu : "");?></td>
                       </tr>
                       <tr>
                           <td style="width: 200px;"><i class="icon-th-list"></i> Pendidikan Terakhir</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($PendidikanOrtu ? $PendidikanOrtu : "");?></td>
                       </tr>
                       <tr>
                           <td style="width: 200px;"><i class="icon-th-list"></i> Pekerjaan</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($PekerjaanOrtu ? $PekerjaanOrtu : "");?></td>
                       </tr>
                       <tr>
                           <td style="width: 200px;"><i class="icon-th-list"></i> Kontak Orang Tua</td>
                           <td style="width: 1px;">:</td>
-                          <td>-</td>
+                          <td><?php echo ($KontakOrtu ? $KontakOrtu : "");?></td>
                       </tr>
                   </tbody>                 
               </table>
