@@ -204,7 +204,16 @@
 			<div class="span12">
 				<ul class="nav nav-list bs-docs-sidenav">
 					<li>
-						<center><img src="../../assets/img/default-foto.png" width="200px" height="200px" class="img-polaroid">
+						<center><img src="
+						<?php 
+						if($link == ''){
+							echo "../../assets/img/default-foto.png";	
+						}
+						else
+						{
+							echo $link;
+						}
+						?>" width="200px" height="200px" class="img-polaroid">
 							<h4>Unggah Foto :</h4>
 							<p style="font-size: 16px; color: #003bb3"><i class="icon-ok"></i> Ukuran max 300 kB <br>
 							<i class="icon-ok"></i> Tipe file : jpg. jpeg, png</p></center>
