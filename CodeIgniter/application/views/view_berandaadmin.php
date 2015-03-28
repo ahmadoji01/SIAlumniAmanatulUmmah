@@ -162,21 +162,25 @@
 			
 		<div class="row-fluid">
         <!--<div class="span2"></div>-->
-        <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataadmin">Mengubah Data Admin</a></p>
-          <p>Menu ini digunakan untuk mengubah data pribadi setiap admin agar data yang tersimpan menjadi data yang valid dan update.</p>
-        </div>
-		<div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/tambahakun">Menambah Akun</a></p>
-          <p>Menu ini digunakan untuk membuat akun alumni yang baru, agar data setiap alumni dapat disimpan di sistem ini.</p>
-        </div>
-		
-	   <div class="span4">
-          <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataalumni">Mengubah Data Alumni</a></p>
-          <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
-       </div>
+			<div class="span4">
+			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/tambahakunadmin">Menambah Akun Admin</a></p>
+			  <p>Menu ini digunakan untuk membuat akun admin yang baru</p>
+			</div>
+			<div class="span4">
+			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataadmin">Mengubah Data Admin Milik Sendiri</a></p>
+			  <p>Menu ini digunakan untuk mengubah data admin milik sendiri agar data yang tersimpan menjadi data yang valid dan update.</p>
+			</div>
+			<div class="span4">
+			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/tambahakun">Menambah Akun Alumni</a></p>
+			  <p>Menu ini digunakan untuk membuat akun alumni yang baru, agar data setiap alumni dapat disimpan di sistem ini.</p>
+			</div>
+			
+		    <div class="span4">
+			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataalumni">Mengubah Data Alumni</a></p>
+			  <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
+            </div>
 	   <!--<div class="span2"></div>-->
-      </div>
+        </div>
 	</div>
 
     </div>
@@ -218,4 +222,24 @@
     <script src="../assets/js/bootstrap-typeahead.js"></script>
 
   </body>
+  <footer>
+	<?php
+		if ($tambah_akun_admin_berhasil) echo "<script>
+													window.onload = fungsi_notifikasi;
+													
+													function fungsi_notifikasi()
+													{
+														alert(" . '"' . $tambah_akun_admin_berhasil . '"' . ");
+													}
+											   </script>";
+		else if ($tambah_akun_berhasil) echo "<script>
+													window.onload = fungsi_notifikasi;
+													
+													function fungsi_notifikasi()
+													{
+														alert(" . '"' . $tambah_akun_berhasil . '"' . ");
+													}
+											   </script>";									   
+	?>
+  </footer>
 </html>
