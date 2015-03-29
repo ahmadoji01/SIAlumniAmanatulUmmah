@@ -271,6 +271,36 @@
 			$this->db->close();
 			return $query;
 		}
+		public function getFoto()
+		{
+			$link = '';
+			$this->load->database();
+			$query = $this->db->query
+					("
+						SELECT LinkFoto
+						FROM Alumni
+						WHERE 
+							Username = '$this->username'	
+					");
+			$this->db->close();
+			foreach($query->result() as $row):
+				$link = $row->LinkFoto;
+			endforeach;
+			return $link;
+		}
+		public function setFoto()
+		{
+			$this->load->database();
+			$query = $this->db->query
+					("
+						UPDATE Alumni
+						SET LinkFoto = '$this->linkfoto'
+						WHERE 
+							Username = '$this->username'	
+					");
+			$this->db->close();
+			return $query;
+		}
 		public function getUsernameFromDatabase()
 		{
 			$this->load->database();

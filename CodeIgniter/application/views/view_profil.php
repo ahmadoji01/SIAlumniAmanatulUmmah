@@ -180,7 +180,16 @@
 			<div class="span12">
               <div class="span3">
               <center>
-				  <img src="../../assets/img/default-foto.png" width="250px" height="250px" class="img-polaroid"><br>                             
+				  <img src="
+					<?php 
+						if($LinkFoto == ''){
+							echo "../../assets/img/default-foto.png";	
+						}
+						else
+						{
+							echo $LinkFoto;
+						}
+					?>" width="250px" height="250px" class="img-polaroid"><br>                             
               </center>
               <script>
               $(function() {
