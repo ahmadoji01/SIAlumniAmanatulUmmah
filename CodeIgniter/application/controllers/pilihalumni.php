@@ -158,10 +158,12 @@
 		}
 		public function uploadfoto()
 		{
+			$this->load->model('Alumni');
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
 			$data['NamaLengkap'] = $this->session->userdata('namalengkap');
-			
+			$this->Alumni->setUsername($username);
+			$data['link'] = $this->Alumni->getFoto();
 			// Check if image file is a actual image or fake image
 			if(isset($_POST["submit"])) 
 			{
@@ -172,6 +174,7 @@
 				else
 				{
 					$target_dir = realpath(__DIR__) . '/../../assets/profpic/';
+					$linkfoto = '../../assets/profpic/' . basename($_FILES["fileToUpload"]["name"]);
 					$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 					$uploadOk = 1;
 					$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -210,6 +213,10 @@
 						if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 							//echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 							$data['status'] = 1;
+							$this->Alumni->setUsername($username);
+							$this->Alumni->setLinkFoto($linkfoto);
+							$this->Alumni->setFoto();
+							$data['link'] = $linkfoto;
 						} else {
 							//echo "Sorry, there was an error uploading your file.";
 							$data['status'] = 2;
