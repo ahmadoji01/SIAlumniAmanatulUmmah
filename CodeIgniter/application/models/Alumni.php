@@ -35,6 +35,7 @@
 		public function __construct()
 		{
 			parent::__construct();
+			$this->load->database();
 		}
 		public function setUsername($Username)
 		{
@@ -280,7 +281,7 @@
 						SELECT LinkFoto
 						FROM Alumni
 						WHERE 
-							Username = '$this->username'	
+							Username = '$this->Username'	
 					");
 			$this->db->close();
 			foreach($query->result() as $row):
@@ -294,9 +295,9 @@
 			$query = $this->db->query
 					("
 						UPDATE Alumni
-						SET LinkFoto = '$this->linkfoto'
+						SET LinkFoto = '$this->LinkFoto'
 						WHERE 
-							Username = '$this->username'	
+							Username = '$this->Username'	
 					");
 			$this->db->close();
 			return $query;
