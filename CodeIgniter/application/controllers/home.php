@@ -19,15 +19,29 @@
 				$notifikasi['username_password_salah'] = $this->session->flashdata('username_password_salah');
 				//pesan berhasil
 				$notifikasi['logout_berhasil'] = $this->session->flashdata('logout_berhasil');
+				
 				$this->load->view('view_login',$notifikasi);
 			}
 			else if ($username[0]=='A') 
 			{
-				$this->load->view('view_berandaadmin',array('NamaLengkap' => $this->session->userdata('namalengkap')));
+				$notifikasi;
+				//bukan pesan
+				$notifikasi['NamaLengkap'] = $this->session->userdata('namalengkap');
+				//pesan berhasil
+				$notifikasi['tambah_akun_admin_berhasil'] = $this->session->flashdata('tambah_akun_admin_berhasil');
+				$notifikasi['tambah_akun_berhasil'] = $this->session->flashdata('tambah_akun_berhasil');
+				
+				$this->load->view('view_berandaadmin',$notifikasi);
 			}
 			else 
 			{
-				$this->load->view('view_beranda',array('NamaLengkap' => $this->session->userdata('namalengkap')));
+				$notifikasi;
+				//bukan pesan
+				$notifikasi['NamaLengkap'] = $this->session->userdata('namalengkap');
+				//pesan berhasil
+				$notifikasi['ubah_data_pribadi_berhasil'] = $this->session->flashdata('ubah_data_pribadi_berhasil');
+				
+				$this->load->view('view_beranda',$notifikasi);
 			}
 		}
 		function sign_in()
@@ -87,7 +101,7 @@
 							$newdata = array(
 										'username' => $row->Username,
 										'namalengkap' => $row->NamaLengkap,
-										'tahunlulus' => $row->TahunLulus
++										'tahunlulus' => $row->TahunLulus
 											);
 							$this->session->set_userdata($newdata);
 						}
