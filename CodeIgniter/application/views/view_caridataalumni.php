@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,10 +11,8 @@
     <link href="../../assets/css/bootstrap.css" rel="stylesheet">
 	<link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style type="text/css">
-
       /* Sticky footer styles
       -------------------------------------------------- */
-
       html,
       body {
         height: 100%;
@@ -24,7 +21,6 @@
 		background-size: 300% 300%;
 		background-position: center top;
       }
-
       /* Wrapper for page content to push down footer */
       #wrap {
         min-height: 100%;
@@ -52,26 +48,20 @@
           padding-right: 20px;
         }
       }
-
-
-
       /* Custom page CSS
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
-
       #wrap > .container {
         padding-top: 60px;
       }
       .container .credit {
         margin: 20px 0;
       }
-
       code {
         font-size: 80%;
       }
 	  
 	  
-
     </style>
     <link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
 	
@@ -125,7 +115,7 @@
               <ul class="nav">
                 <li> <a href="../home"><i class="icon-home"></i> Beranda</a></li>
                 
-                <li><a href="../pilihadmin/tentang"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li><a href="../pilihadmin/tentang"> <i class="icon-bookmark"> </i> Tentang</a></li>
               </ul>
 			</div>
 				
@@ -258,8 +248,14 @@
 					<!-- Button to trigger modal -->
 						<!--<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>-->
 						 
+
+					
+					</div>
+					<?php if($status == 1) {$counter = 0; foreach($query->result() as $row): 
+						$counter++;
+						echo '
 						<!-- Modal -->
-						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div id="myModal' . $row->Username . '" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						  <div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 							
@@ -267,31 +263,25 @@
 						
 						  </div>
 						  <div class="modal-footer">
-							<button class="btn btn-primary">Ya</button>
+							<a href="../pilihadmin/hapusdataalumni/' . $row->Username . '"><button class="btn btn-primary">Ya</button></a>
 							<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 						  </div>
 						</div>
 						
 						<script>
-							$('#myModal').modal(options)
-						</script>
-
-					
-					
-					</div>
-					<?php if($status == 1) {$counter = 0; foreach($query->result() as $row): 
-						$counter++;
-						/*echo '
+							$("#myModal").modal(options)
+						</script>';
+						echo '
 						<tr>
 							<td>
 							</td>
 							<td style= "width: 100px;">
-								<a  href="#########ubahdataalumni.php"> <span class="label label-inverse"><i class="icon-edit icon-white"></i> Ubah Data</span></a>
+								<a  href="../pilihadmin/gantidataalumni/' . $row->Username . '"> <span class="label label-inverse"><i class="icon-edit icon-white"></i> Ubah Data</span></a>
 							</td>
 							<td style= "width: 100px;">
-								<a  href="#myModal" class="label label-important" data-toggle="modal"><i class="icon-trash icon-white"></i> Hapus Data</a>
+								<a  href="#myModal' . $row->Username . '" class="label label-important" data-toggle="modal"><i class="icon-trash icon-white"></i> Hapus Data</a>
 							</td>
-						</tr>';*/
+						</tr>';
 						echo '
 						<tr>
 							<td style="font-size:14px; vertical-align:left; width: 5px;" rowspan="8">'.$counter.'</td>

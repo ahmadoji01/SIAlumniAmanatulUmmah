@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Ubah Data Admin | SI Himpunan Alumni Amanatul Ummah</title>
+    <title>Ubah Data Diri | SI Himpunan Alumni Amanatul Ummah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -148,40 +148,40 @@
 
       <!-- Begin page content -->
       <div class="container">
-        <center><h2>&nbsp &nbsp Mengubah Data Admin</h2></center>
+        <center><h2>&nbsp &nbsp Mengubah Data Diri</h2></center>
 				<br>
 			<div class="row-fluid">
 				<div class="span4"> </div>
 				<div class="span4">
-				<form class="form-horizontal" method="post" action="">
+				<form class="form-horizontal" method="post" action="../pilihadmin/do_ubahdataadmin">
 					<div class="control-group">
 						<label class="control-label" for="inputNama" style="text-align: left"> Nama</label>
 							<div class="controls">
-								<input type="text" id="inputNama" value="" placeholder="Nama">
+								<input name="inputNama" type="text" id="inputNama" value="<?php echo $NamaLengkap;?>" placeholder="Nama">
 							</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="inputUsername" style="text-align: left"> Username</label>
 							<div class="controls">
-								<input type="text" id="inputUsername" value="" placeholder="Username">
+								<input name="inputUsername" type="text" id="inputUsername" value="<?php echo $Username;?>" placeholder="Username" disabled>
 							</div>
 					</div>
 					<div class="control-group">
 							<label class="control-label" for="inputPasswordLama" style="text-align: left"> Password Lama</label>
 						<div class="controls">
-							<input type="password" id="inputPasswordLama" value="" placeholder="Password Lama">
+							<input name="inputPasswordLama" type="password" id="inputPasswordLama" value="" placeholder="Password Lama">
 						</div>
 					</div>
 					<div class="control-group">
 							<label class="control-label" for="inputPasswordBaru" style="text-align: left"> Password Baru</label>
 						<div class="controls">
-							<input type="password" id="inputPasswordBaru" value="" placeholder="Password Baru">
+							<input name="inputPasswordBaru" type="password" id="inputPasswordBaru" value="" placeholder="Password Baru">
 						</div>
 					</div>
 					<div class="control-group">
 								<label class="control-label" for="inputKonfirmasiPassword" style="text-align: left"> Konfirmasi Password</label>
 							<div class="controls">
-								<input type="password" id="inputKonfirmasiPassword" value="" placeholder="Konfirmasi Password">
+								<input name="inputKonfirmasiPassword" type="password" id="inputKonfirmasiPassword" value="" placeholder="Konfirmasi Password">
 							</div>
 						</div>
 				

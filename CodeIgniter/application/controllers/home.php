@@ -30,6 +30,8 @@
 				//pesan berhasil
 				$notifikasi['tambah_akun_admin_berhasil'] = $this->session->flashdata('tambah_akun_admin_berhasil');
 				$notifikasi['tambah_akun_berhasil'] = $this->session->flashdata('tambah_akun_berhasil');
+				$notifikasi['hapus_data_alumni_berhasil'] = $this->session->flashdata('hapus_data_alumni_berhasil');
+				$notifikasi['ganti_data_alumni_berhasil'] = $this->session->flashdata('ganti_data_alumni_berhasil');
 				
 				$this->load->view('view_berandaadmin',$notifikasi);
 			}
@@ -101,7 +103,7 @@
 							$newdata = array(
 										'username' => $row->Username,
 										'namalengkap' => $row->NamaLengkap,
-+										'tahunlulus' => $row->TahunLulus
+										'tahunlulus' => $row->TahunLulus
 											);
 							$this->session->set_userdata($newdata);
 						}

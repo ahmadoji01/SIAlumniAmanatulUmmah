@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tambah Akun | SI Himpunan Alumni Amanatul Ummah</title>
+    <title>Tambah Akun Alumni | SI Himpunan Alumni Amanatul Ummah</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -128,7 +128,7 @@
               <ul class="nav">
                 <li><a href="../home"><i class="icon-home"></i> Beranda</a></li>
              
-                <li><a href="../pilihadmin/tentang"><i class="icon-bookmark"></i> Tentang</a></li
+                <li><a href="../pilihadmin/tentang"><i class="icon-bookmark"></i> Tentang</a></li>
               </ul>
 			</div>
 				
@@ -169,11 +169,30 @@
 
       <!-- Mengubah Data Pribadi -->
       <div class="container">
-			<center><h2>Menambah Akun</h2></center>
+			<center><h2>Menambah Akun Alumni</h2></center>
+			<center style="color:red;">&nbsp &nbsp * (wajib diisi)</center>
+			<br>
+			<!--center style="background-color:red; color:white;">&nbsp &nbsp tes</center>
+			<br>
+			<center style="background-color:red; color:white;">&nbsp &nbsp tes</center>
+			<br-->
+			<?php
+				if ($nama_lengkap_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $nama_lengkap_kosong . "</center><br>";
+				if ($jenis_kelamin_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $jenis_kelamin_kosong . "</center><br>";
+				if ($nama_lembaga_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $nama_lembaga_kosong . "</center><br>";
+				if ($tahun_lulus_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $tahun_lulus_kosong . "</center><br>";
+				if ($username_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $username_kosong . "</center><br>";
+				if ($password_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $password_kosong . "</center><br>";
+				if ($ulangi_password_kosong) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $ulangi_password_kosong . "</center><br>";
+				if ($nama_lembaga_tidak_terdaftar) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $nama_lembaga_tidak_terdaftar . "</center><br>";
+				if ($format_email_salah) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $format_email_salah . "</center><br>";
+				if ($username_sudah_ada) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $username_sudah_ada . "</center><br>";
+				if ($password_dan_ulangi_password_tidak_sama) echo "<center style='background-color:red; color:white;'>&nbsp &nbsp " . $password_dan_ulangi_password_tidak_sama . "</center><br>";
+			?>
 	  <div class="span2" >
 	  </div>
       <div class="span7">
-          <form class="form-horizontal" name="login" action="update_db.php" method="POST">
+          <form class="form-horizontal" name="login" action="../pilihadmin/do_tambahakun" method="post">
           <div class="accordion" id="accordion2">
             
 			<!--Informasi Umum-->
@@ -188,28 +207,28 @@
                     <div class="span6">
                         <!-- Nama Lengkap -->
                         <div class="control-group">
-                            <label class="control-label" for="namaLengkap" style="text-align: left">Nama Lengkap</label>
+                            <label class="control-label" for="namaLengkap" style="text-align: left">Nama Lengkap <span style="color:red;">*</span></label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="namaLengkap" name="namaLengkap" value="" placeholder="Nama Lengkap">
+                                <input name="namaLengkap" class="input-xlarge" type="text" id="namaLengkap" value="" placeholder="Nama Lengkap">
                             </div>
                         </div>
                         <!-- Nama Panggilan -->
                         <div class="control-group">
                             <label class="control-label" for="namaPanggilan" style="text-align: left">Nama Panggilan</label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="namaPanggilan" name="namaPanggilan" value="" placeholder="Nama Panggilan">
+                                <input name="namaPanggilan" class="input-xlarge" type="text" id="namaPanggilan" value="" placeholder="Nama Panggilan">
                             </div>
                         </div>
                         
                         <!-- Jenis Kelamin -->
                         <div class="control-group">
-                            <label class="control-label" for="inputJenisKelamin" style="text-align: left">Jenis Kelamin</label>
+                            <label class="control-label" for="inputJenisKelamin" style="text-align: left">Jenis Kelamin <span style="color:red;">*</span></label>
                             <div class="controls">                                
                                 <label class="radio">
-                                    <input type="radio" name="inputJenisKelamin" id="inputStatus2" value="1"checked>Laki-laki
+                                    <input name="inputJenisKelamin" type="radio" id="inputStatus2" value="L"checked>Laki-laki
                                 </label>
                                 <label class="radio">
-                                    <input type="radio" name="inputJenisKelamin" id="inputStatus3" value="2">Perempuan
+                                    <input name="inputJenisKelamin" type="radio" id="inputStatus3" value="P">Perempuan
                                 </label>
                             </div>
                         </div>
@@ -218,17 +237,17 @@
 						<div class="control-group">
                             <label class="control-label" for="inputTTL" style="text-align: left">Tempat-Tanggal Lahir</label>
                             <div class="controls">
-                                <input  style="width:110px;" class="span3" type="text" id="inputTempat" name="inputTempatLahir" value="" placeholder="Tempat Lahir"> - 
-                                <input  style="width:145px;" class="span3" type="date" id="inputTempat" name="inputTanggalLahir" value="" placeholder="Tanggal Lahir">
+                                <input name="inputTempatLahir" style="width:110px;" class="span3" type="text" id="inputTempat" value="" placeholder="Tempat Lahir"> - 
+                                <input name="inputTanggalLahir" style="width:145px;" class="span3" type="date" id="inputTempat" value="" placeholder="Tanggal Lahir">
                             </div>
                         </div>
 						
 						<!--Nama Lembaga-->
 						<div class="control-group">
-						<label class="control-label" for="inputCabang" style="text-align: left">Nama Lembaga</label>
+						<label class="control-label" for="inputCabangLembaga" style="text-align: left">Nama Lembaga <span style="color:red;">*</span></label>
 							<div class="controls"> 
 							
-								<select>
+								<select name="inputCabangLembaga">
 										<option>MA Unggulan Amanatul Ummah Surabaya	</option>
 										<option>MA Akselerasi Amanatul Ummah Surabaya</option>
 										<option>SMA Unggulan Amanatul Ummah Surabaya</option>
@@ -245,18 +264,18 @@
 						
 						<!--Tahun Lulus-->
 						<div class="control-group">
-                            <label class="control-label" for="tahunLulus" style="text-align: left">Tahun Lulus</label>
+                            <label class="control-label" for="tahunLulus" style="text-align: left">Tahun Lulus <span style="color:red;">*</span></label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="tahunLulus" name="tahunLulus" value="" placeholder="Tahun Lulus">
+                                <input name="tahunLulus" class="input-xlarge" type="text" id="tahunLulus" value="" placeholder="Tahun Lulus">
                             </div>
                         </div>
 						
 						<!--Cabang-->
 						<div class="control-group">
-						<label class="control-label" for="inputCabang" style="text-align: left">Cabang PTN/PTS</label>
+						<label class="control-label" for="inputCabang" style="text-align: left">Cabang PTN/PTS <span style="color:red;">*</span></label>
 							<div class="controls"> 
 							
-								<select>
+								<select name="inputCabang">
 										<option>Surabaya</option>
 										<option>Sidoarjo</option>
 										<option>Mojokerto</option>
@@ -274,13 +293,13 @@
 							</div>
 							
 						</div>
+
 						
-		
 						<!--Alamat Asal-->
 						<div class="control-group">
                             <label class="control-label" for="inputAlamatAsal" style="text-align: left">Alamat Asal</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputAlamatAsal" name="inputAlamatAsal" placeholder="Alamat Asal" required> </textarea>
+                                <textarea name="inputAlamatAsal" class="input-xlarge" rows="4" id="inputAlamatAsal" placeholder="Alamat Asal" required> </textarea>
                             </div>
                         </div>
 						
@@ -288,26 +307,25 @@
 						<div class="control-group">
                             <label class="control-label" for="inputAlamatSekarang" style="text-align: left">Alamat Sekarang</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputAlamatSekarang" name="inputAlamatSekarang" placeholder="Alamat Sekarang" required> </textarea>
+                                <textarea name="inputAlamatSekarang" class="input-xlarge" rows="4" id="inputAlamatSekarang" placeholder="Alamat Sekarang" required> </textarea>
                             </div>
                         </div>
 						
-						<!-- No HP + Provider -->
+						<!-- No HP -->
                         <div class="control-group">
                             <label class="control-label" for="inputNoHP" style="text-align: left">Nomor Handphone</label>
                             <div class="controls">
                                 <div class="input-prepend">
                                     <span class="add-on">+62</span>
-                                    <input class="input-medium" class="span2" id="inputNoHP" name="inputNoHP" type="text" value="" placeholder="81234....." required>                                    
+                                    <input name="inputNoHP" class="input-medium" class="span2" id="inputNoHP" type="text" value="" placeholder="81234....." required>                                    
                                 </div>
-                                <input style="width:80px;" class="input-small" id="inputOperator" name="inputOperator" type="text" value="" placeholder="Operator" required><em>*wajib diisi</em>
                             </div>
                         </div>						
                         <!-- Email -->
                         <div class="control-group">
                             <label class="control-label" for="inputEmail" style="text-align: left">Email</label>
                             <div class="controls">
-                                <input class="input-xlarge" class="span3" type="email" id="inputEmail" name="inputEmail" value="" placeholder="yourname@email.com" required>
+                                <input name="inputEmail" class="input-xlarge" class="span3" type="email" id="inputEmail" value="" placeholder="yourname@email.com" required>
                             </div>
                         </div>
 			
@@ -330,7 +348,7 @@
 						<div class="control-group">
                             <label class="control-label" for="inputKuliah" style="text-align: left">Kuliah<br><em>*Teknik Informatika - ITS</em></label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputKuliah" name="inputKuliah" placeholder="Kuliah"> </textarea>
+                                <textarea name="inputKuliah" class="input-xlarge" rows="4" id="inputKuliah" placeholder="Kuliah"> </textarea>
                             </div>
                         </div>
 						
@@ -338,7 +356,7 @@
                         <div class="control-group">
                             <label class="control-label" for="inputAktifOrganisasi" style="text-align: left">Aktif Organisasi</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputAktifOrganisasi" name="inputAlamatAsal" placeholder="Aktif Organisasi"> </textarea>
+                                <textarea name="inputAktifOrganisasi" class="input-xlarge" rows="4" id="inputAktifOrganisasi" placeholder="Aktif Organisasi"> </textarea>
                             </div>
                         </div>
 						
@@ -346,7 +364,7 @@
                         <div class="control-group">
                             <label class="control-label" for="inputBekerja" style="text-align: left">Bekerja</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputBekerja" name="inputBekerja" placeholder="Bekerja"> </textarea>
+                                <textarea name="inputBekerja" class="input-xlarge" rows="4" id="inputBekerja" placeholder="Bekerja"> </textarea>
                             </div>
                         </div>
 						
@@ -354,7 +372,7 @@
                         <div class="control-group">
                             <label class="control-label" for="inputHobi" style="text-align: left">Hobi</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="3" id="inputHobi" name="inputHobi" placeholder="Hobi"> </textarea>
+                                <textarea name="inputHobi" class="input-xlarge" rows="3" id="inputHobi" placeholder="Hobi"> </textarea>
                             </div>
                         </div>
 						
@@ -362,7 +380,7 @@
                         <div class="control-group">
                             <label class="control-label" for="inputPrestasi" style="text-align: left">Prestasi</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="4" id="inputPrestasi" name="inputPrestasi" placeholder="Prestasi"> </textarea>
+                                <textarea name="inputPrestasi" class="input-xlarge" rows="4" id="inputPrestasi" placeholder="Prestasi"> </textarea>
                             </div>
                         </div>
 						
@@ -370,14 +388,14 @@
                         <div class="control-group">
                             <label class="control-label" for="inputCita" style="text-align: left">Cita-cita</label>
                             <div class="controls">
-                                 <textarea class="input-xlarge" rows="3" id="inputCita" name="inputCita" placeholder="Cita-cita"> </textarea>
+                                 <textarea name="inputCita" class="input-xlarge" rows="3" id="inputCita" placeholder="Cita-cita"> </textarea>
                             </div>
                         </div>							
                         <!-- Motto -->
                         <div class="control-group">   
                             <label class="control-label" for="inputMotto" style="text-align: left">Motto</label>
                             <div class="controls">
-                                <textarea class="input-xlarge" rows="3" id="inputMotto" name="inputMotto" placeholder="Motto"> </textarea>
+                                <textarea name="inputMotto" class="input-xlarge" rows="3" id="inputMotto" placeholder="Motto"> </textarea>
                             </div>
                         </div>
                     </div>
@@ -400,7 +418,7 @@
                         <div class="control-group">
                             <label class="control-label" for="namaOrangTua" style="text-align: left">Nama Orang-Tua</label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="inputNamaOrangTua" name="inputNamaOrangTua" value="" placeholder="Nama Orang-Tua">
+                                <input name="inputNamaOrangTua" class="input-xlarge" type="text" id="inputNamaOrangTua" value="" placeholder="Nama Orang-Tua">
                             </div>
                         </div>
 						
@@ -408,7 +426,7 @@
                         <div class="control-group">
                             <label class="control-label" for="pendidikanTerakhir" style="text-align: left">Pendidikan Terakhir</label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="inputPendidikanTerakhir" name="inputPendidikanTerakhir" value="" placeholder="Pendidikan Terakhir">
+                                <input name="inputPendidikanTerakhir" class="input-xlarge" type="text" id="inputPendidikanTerakhir" value="" placeholder="Pendidikan Terakhir">
                             </div>
                         </div>	
 						
@@ -416,7 +434,7 @@
                         <div class="control-group">
                             <label class="control-label" for="pekerjaan" style="text-align: left">Pekerjaan</label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="inputPekerjaan" name="inputPekerjaan" value="" placeholder="Pekerjaan">
+                                <input name="inputPekerjaan" class="input-xlarge" type="text" id="inputPekerjaan" value="" placeholder="Pekerjaan">
                             </div>
                         </div>
                         		
@@ -425,7 +443,7 @@
                         <div class="control-group">
                             <label class="control-label" for="inputKontakOrtu" style="text-align: left">Kontak Ortu</label>
                             <div class="controls">
-                                <input class="input-xlarge" type="text" id="inputKontakOrtu" name="inputKontakOrtu" value="" placeholder="Kontak Bapak/Ibu">
+                                <input name="inputKontakOrtu" class="input-xlarge" type="text" id="inputKontakOrtu" value="" placeholder="Kontak Bapak/Ibu">
                             </div>
                         </div>
                      
@@ -454,15 +472,9 @@
                                   <div class="tab-pane active" id="facebook">
                                       <blockquote><h3>Facebook</h3></blockquote>
                                       <div class="control-group">
-                                          <label class="control-label" for="inputNamaProfil">Nama Profil</label>
-                                          <div class="controls">
-                                              <input type="text" id="inputNamaProfil" name="inputNamaProfil" placeholder="Nama Profil Facebook" value="">
-                                          </div>
-                                      </div>
-                                      <div class="control-group">
                                           <label class="control-label" for="inputLinkFB">Link Profil Facebook</label>
                                           <div class="controls">
-                                              <input type="text" id="inputLinkFB" name="inputLinkFB" placeholder="Link Profil Facebook" value="">
+                                              <input name="inputLinkFB" type="text" id="inputLinkFB" placeholder="(ex: www.facebook.com/jabiralhayyan)" value="">
                                           </div>
                                       </div>
                                   </div>
@@ -471,13 +483,7 @@
                                       <div class="control-group">
                                           <label class="control-label" for="inputIDTwitter">ID Twitter</label>
                                           <div class="controls">
-                                              <input type="text" id="inputIDTwitter" name="inputIDTwitter" placeholder="ID Twitter (ex : @namatwitter" value="">
-                                          </div>
-                                      </div>
-                                      <div class="control-group">
-                                          <label class="control-label" for="inputLinkTwitter">Link Profil Twitter</label>
-                                          <div class="controls">
-                                              <input type="text" id="inputLinkTwitter" name="inputLinkTwitter" placeholder="Link Profil Twitter" value="">
+                                              <input name="inputIDTwitter" type="text" id="inputIDTwitter" placeholder="(ex : @JabirHayyan)" value="">
                                           </div>
                                       </div>
                                 </div>
@@ -486,7 +492,7 @@
                                       <div class="control-group">
                                          <label class="control-label" for="inputAlamatBlog">Alamat Website</label>
                                           <div class="controls">
-                                              <input type="text" id="inputAlamatWebsite" name="inputAlamatBlog" placeholder="Alamat Blog/Website" value="">
+                                              <input name="inputAlamatBlog" type="text" id="inputAlamatWebsite" placeholder="Alamat Blog/Website" value="">
                                           </div>
                                       </div>
                                 </div>
@@ -500,43 +506,34 @@
 		 <div class="accordion-group">
               <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-                      <i class="icon-tasks"></i><i class="icon-chevron-down pull-right"></i> GANTI USERNAME DAN PASSWORD
+                      <i class="icon-tasks"></i><i class="icon-chevron-down pull-right"></i> USERNAME DAN PASSWORD
                   </a>
               </div>
                   <div id="collapseFive" class="accordion-body collapse">
                       <div class="accordion-inner">
 						<div class="span6">
 							
-							<!--Ganti Username-->
+							<!--Username-->
 							<div class="control-group">
-								<label class="control-label" for="inputUsername" style="text-align: left">Username</label>
+								<label class="control-label" for="inputUsername" style="text-align: left">Username <span style="color:red;">*</span></label>
 								<div class="controls">
-									<input class="input-xlarge" type="text" id="inputUsername" name="inputUsername" value="" placeholder="Username">
+									<input name="inputUsername" class="input-xlarge" type="text" id="inputUsername" value="" placeholder="Username">
 								</div>
 							</div>
 							 
-							 <!--Password Lama-->
+							 <!--Password-->
 							 <div class="control-group">
-								<label class="control-label" for="inputPasswordLama" style="text-align: left">Password Lama</label>
+								<label class="control-label" for="inputPassword" style="text-align: left">Password <span style="color:red;">*</span></label>
 								<div class="controls">
-									<input class="input-xlarge" type="password" id="inputPassword" name="inputPasswordLama" value="" placeholder="Password Lama">
+									<input name="inputPassword" class="input-xlarge" type="password" id="inputPassword" value="" placeholder="Password">
 								</div>
 							</div>
 							 
-							 <!--Password Baru-->
+							 <!--Ulangi Password-->
 							 <div class="control-group">
-								<label class="control-label" for="inputPasswordBaru" style="text-align: left">Password Baru</label>
+								<label class="control-label" for="inputUlangiPassword" style="text-align: left">Ulangi Password <span style="color:red;">*</span></label>
 								<div class="controls">
-									<input class="input-xlarge" type="password" id="inputPasswordBaru" name="inputPasswordBaru" value="" placeholder="Password Baru">
-								</div>
-							</div>
-							 
-							 
-							 <!--Ulangi Password Baru-->
-							 <div class="control-group">
-								<label class="control-label" for="inputUlangiPasswordBaru" style="text-align: left">Ulangi Password Baru</label>
-								<div class="controls">
-									<input class="input-xlarge" type="password" id="inputUlangiPasswordBaru" name="inputUlangiPasswordBaru" value="" placeholder="Konfirmasi Password">
+									<input name="inputUlangiPassword" class="input-xlarge" type="password" id="inputUlangiPassword" value="" placeholder="Konfirmasi Password">
 								</div>
 							</div>
 							

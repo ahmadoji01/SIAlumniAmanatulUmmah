@@ -158,12 +158,10 @@
 		}
 		public function uploadfoto()
 		{
-			$this->load->model('Alumni');
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
 			$data['NamaLengkap'] = $this->session->userdata('namalengkap');
-			$this->Alumni->setUsername($username);
-			$data['link'] = $this->Alumni->getFoto();
+			
 			// Check if image file is a actual image or fake image
 			if(isset($_POST["submit"])) 
 			{
@@ -174,7 +172,6 @@
 				else
 				{
 					$target_dir = realpath(__DIR__) . '/../../assets/profpic/';
-					$linkfoto = '../../assets/profpic/' . basename($_FILES["fileToUpload"]["name"]);
 					$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 					$uploadOk = 1;
 					$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -213,10 +210,6 @@
 						if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 							//echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 							$data['status'] = 1;
-							$this->Alumni->setUsername($username);
-							$this->Alumni->setLinkFoto($linkfoto);
-							$this->Alumni->setFoto();
-							$data['link'] = $linkfoto;
 						} else {
 							//echo "Sorry, there was an error uploading your file.";
 							$data['status'] = 2;
@@ -247,36 +240,49 @@
 				}
 			}
 		}
-		public function caridataalumni()
+		public function carialumni()
 		{
 			$this->load->library('session');
 			$username = $this->session->userdata('username');
-			$this->load->model('Alumni');
-			$nama = $this->input->post('inputNama');
-			$tahunlulus = $this->session->userdata('tahunlulus');
-			$this->Alumni->setName($nama);
-			$this->Alumni->setTahunLulus($tahunlulus);
-			$data['NamaLengkap'] = $this->session->userdata('namalengkap');
-			if($nama != '')
-			{	
-				$data['query'] = $this->Alumni->searchMhs(9);
-			}
-			$data['nama'] = $nama;
-			$data['status'] = 0;
 			if ($username==false)
 			{
 				$this->load->helper('url');
 				redirect('home','location');
 			}
-			else if ($nama != '' && $data['query']->num_rows() > 0)
+			else if ($username[0]=='A')
 			{
-				$data['status'] = 1;
-				$this->load->view('view_carialumni', $data);
+				$this->load->helper('url');
+				redirect('home','location');
 			}
 			else
 			{
-				$data['status'] = 2;
-				$this->load->view('view_carialumni', $data);
+				$this->load->model('Alumni');
+				$nama = $this->input->post('inputNama');
+				$tahunlulus = $this->session->userdata('tahunlulus');
+				$this->Alumni->setNamaLengkap($nama);
+				$this->Alumni->setTahunLulus($tahunlulus);
+				$data['NamaLengkap'] = $this->session->userdata('namalengkap');
+				if($nama != '')
+				{	
+					$data['query'] = $this->Alumni->searchMhs(9);
+				}
+				$data['nama'] = $nama;
+				$data['status'] = 0;
+				if ($username==false)
+				{
+					$this->load->helper('url');
+					redirect('home','location');
+				}
+				else if ($nama != '' && $data['query']->num_rows() > 0)
+				{
+					$data['status'] = 1;
+					$this->load->view('view_carialumni', $data);
+				}
+				else
+				{
+					$data['status'] = 2;
+					$this->load->view('view_carialumni', $data);
+				}
 			}
 		}
 		public function do_ubahdatapribadi()

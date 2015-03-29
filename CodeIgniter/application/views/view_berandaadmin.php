@@ -239,7 +239,23 @@
 													{
 														alert(" . '"' . $tambah_akun_berhasil . '"' . ");
 													}
-											   </script>";									   
+											   </script>";
+		else if ($hapus_data_alumni_berhasil) echo "<script>
+														window.onload = fungsi_notifikasi;
+														
+														function fungsi_notifikasi()
+														{
+															alert(" . '"' . $hapus_data_alumni_berhasil . '"' . ");
+														}
+											        </script>";
+		else if ($ganti_data_alumni_berhasil) echo "<script>
+														window.onload = fungsi_notifikasi;
+														
+														function fungsi_notifikasi()
+														{
+															alert(" . '"' . $ganti_data_alumni_berhasil . '"' . ");
+														}
+											        </script>";
 	?>
   </footer>
 </html>

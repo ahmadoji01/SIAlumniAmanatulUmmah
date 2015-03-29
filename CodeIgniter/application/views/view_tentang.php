@@ -131,10 +131,10 @@
 			<ul class="nav pull-right">
 				
 				<li>
-					<form class="form-search nav">
+					<form class="form-search nav" method="post" action="../pilihalumni/carialumni">
 						<div class=" navbar-search input-prepend">
 						<button type="submit" class="btn"><i class="icon-search"></i></button>
-						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni">
+						<input name="inputNama" type="text" class="search-query span2" placeholder="Mencari Data Alumni">
 						</div>
 					</form>
 				</li>
@@ -230,7 +230,7 @@
                   
 				  <a href="http://himahpusat.blogspot.com" data-toggle="tooltip" title="himahpusat.blogspot.com"><img src="../../assets/img/logo-blog.png" width="70px" height="70px"></a>
                   
-				  <a href="himah.pusat@gmail.com" data-toggle="tooltip" title="himah.pusat@gmail.com"><img src="../../assets/img/logo-email.png" width="70px" height="70px"></a>        
+				  <a href="http://himah.pusat@gmail.com" data-toggle="tooltip" title="himah.pusat@gmail.com"><img src="../../assets/img/logo-email.png" width="70px" height="70px"></a>        
 
 			</div>	
 		</div>

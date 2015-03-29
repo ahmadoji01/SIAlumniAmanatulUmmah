@@ -134,10 +134,10 @@
 			<ul class="nav pull-right">
 				
 				<li>
-					<form class="form-search nav">
+					<form class="form-search nav" method="post" action="../pilihalumni/carialumni">
 						<div class=" navbar-search input-prepend">
 						<button type="submit" class="btn"><i class="icon-search"></i></button>
-						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni">
+						<input name="inputNama" type="text" class="search-query span2" placeholder="Mencari Data Alumni">
 						</div>
 					</form>
 				</li>
@@ -180,16 +180,7 @@
 			<div class="span12">
               <div class="span3">
               <center>
-					<img src="
-					<?php 
-						if($LinkFoto == ''){
-							echo "../../assets/img/default-foto.png";	
-						}
-						else
-						{
-							echo $LinkFoto;
-						}
-					?>" width="250px" height="250px" class="img-polaroid"><br>                             
+				  <img src="../../assets/img/default-foto.png" width="250px" height="250px" class="img-polaroid"><br>                             
               </center>
               <script>
               $(function() {
@@ -251,10 +242,10 @@
                   </tbody>                 
               </table>
               <br>
-                  <a href="<?php echo ($Facebook ? $Facebook : "");?>" data-toggle="tooltip" title="<?php echo ($Facebook ? $Facebook : "");?>"><img src="../../assets/img/logo-fb.png" width="50px" height="50px"></a>
-                  <a href="<?php echo ($Twitter ? $Twitter : "");?>" data-toggle="tooltip" title="<?php echo ($Twitter ? $Twitter : "");?>"><img src="../../assets/img/logo-twitter.png" width="50px" height="50px"></a>
-                  <a href="<?php echo ($Blog ? $Blog : "");?>" data-toggle="tooltip" title="<?php echo ($Blog ? $Blog : "");?>"><img src="../../assets/img/logo-blog.png" width="50px" height="50px"></a>
-                  <a href="<?php echo ($Email ? $Email : "");?>" data-toggle="tooltip" title="<?php echo ($Email ? $Email : "");?>"><img src="../../assets/img/logo-email.png" width="50px" height="50px"></a>        
+                  <a href="http://<?php echo ($Facebook ? $Facebook : "");?>" data-toggle="tooltip" title="<?php echo ($Facebook ? $Facebook : "");?>"><img src="../../assets/img/logo-fb.png" width="50px" height="50px"></a>
+                  <a href="http://<?php echo ($Twitter ? $Twitter : "");?>" data-toggle="tooltip" title="<?php echo ($Twitter ? $Twitter : "");?>"><img src="../../assets/img/logo-twitter.png" width="50px" height="50px"></a>
+                  <a href="http://<?php echo ($Blog ? $Blog : "");?>" data-toggle="tooltip" title="<?php echo ($Blog ? $Blog : "");?>"><img src="../../assets/img/logo-blog.png" width="50px" height="50px"></a>
+                  <a href="http://<?php echo ($Email ? $Email : "");?>" data-toggle="tooltip" title="<?php echo ($Email ? $Email : "");?>"><img src="../../assets/img/logo-email.png" width="50px" height="50px"></a>        
           </blockquote>
               </div>
 

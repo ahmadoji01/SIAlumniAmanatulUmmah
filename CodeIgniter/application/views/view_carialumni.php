@@ -121,13 +121,13 @@
               <span class="icon-bar"></span>
             </button>
 			
-            <a class="brand" href="beranda.php"> <img src="../../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
+            <a class="brand" href="../home"> <img src="../../assets/img/logo-himah.png" width="25px" height="25px"/> SI-HIMAH</a>
 					
             <div class="nav-collapse  navbar-responsive-collapse collapse">
               <ul class="nav">
                 <li><a href="../home"><i class="icon-home icon-white"></i> Beranda</a></li>
-                <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
-                <li><a href="tentang.php"> <i class="icon-bookmark"> </i> Tentang</a></li
+                <li><a href="../pilihalumni/profil"><i class="icon-user"></i> Profil</a></li>
+                <li><a href="../pilihalumni/tentang"> <i class="icon-bookmark"> </i> Tentang</a></li>
               </ul>
 			</div>
 				
@@ -135,10 +135,10 @@
 			<ul class="nav pull-right">
 				
 				<li>
-					<form class="form-search nav" method="post" action="caridataalumni">
+					<form class="form-search nav" method="post" action="carialumni">
 						<div class=" navbar-search input-prepend">
 						<button type="submit" class="btn"><i class="icon-search"></i></button>
-						<input type="text" class="search-query span2" placeholder="Mencari Data Alumni" name="inputNama" id="inputNama">
+						<input name="inputNama" type="text" class="search-query span2" placeholder="Mencari Data Alumni" id="inputNama">
 						</div>
 					</form>
 				</li>
@@ -146,22 +146,22 @@
 	
 				<li>
 					<div class="btn-group">
-					<a href="profile.html" class="btn btn-primary"><i class="icon-user icon-white"></i> <?php echo $NamaLengkap; ?></a>
+					<a href="../pilihalumni/profil" class="btn btn-primary"><i class="icon-user icon-white"></i> <?php echo $NamaLengkap; ?></a>
 					<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="ubahdatapribadi.php"><i class="icon-pencil"></i> Mengubah Data</a></li>
+						<li><a href="../pilihalumni/ubahdatapribadi"><i class="icon-pencil"></i> Mengubah Data</a></li>
 						
-						<li><a href="uploadfoto"><i class="icon-camera"></i> Upload Foto</a></li>
+						<li><a href="../pilihalumni/uploadfoto"><i class="icon-camera"></i> Upload Foto</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Pengaturan</li>
 						
-						<li><a href="ubahdatapribadi.php"><i class="icon-lock"></i> Mengubah Password</a></li>
+						<li><a href="../pilihalumni/ubahdatapribadi"><i class="icon-lock"></i> Mengubah Password</a></li>
 						
 						<li class="divider"></li>
 						<li class="nav-header">Akun</li>
 						
-						<li><a href="#"><i class="icon-off"></i> Keluar</a></li>
+						<li><a href="../home/sign_out"><i class="icon-off"></i> Keluar</a></li>
 					</ul>
 					</div>
 				</li>
