@@ -281,7 +281,7 @@
 					</div>
 					<?php if($status == 1) {$counter = 0; foreach($query->result() as $row): 
 						$counter++;
-						echo '
+						/*echo '
 						<tr>
 							<td>
 							</td>
@@ -291,7 +291,7 @@
 							<td style= "width: 100px;">
 								<a  href="#myModal" class="label label-important" data-toggle="modal"><i class="icon-trash icon-white"></i> Hapus Data</a>
 							</td>
-						</tr>';
+						</tr>';*/
 						echo '
 						<tr>
 							<td style="font-size:14px; vertical-align:left; width: 5px;" rowspan="8">'.$counter.'</td>
