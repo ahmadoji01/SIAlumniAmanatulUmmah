@@ -125,7 +125,7 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li><a href="../home"><i class="icon-home"></i> Beranda</a></li>
-                <li><a href="profil.php"><i class="icon-user"></i> Profil</a></li>
+                <li><a href="profil"><i class="icon-user"></i> Profil</a></li>
                 <li><a href="tentang.php"><i class="icon-bookmark"></i> Tentang</a></li
               </ul>
 			</div>
