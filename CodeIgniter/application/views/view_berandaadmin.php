@@ -161,7 +161,7 @@
         </div>
 			
 		<div class="row-fluid">
-        <!--<div class="span2"></div>-->
+        <div class="span2"></div>
 			<div class="span4">
 			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/tambahakunadmin">Menambah Akun Admin</a></p>
 			  <p>Menu ini digunakan untuk membuat akun admin yang baru</p>
@@ -170,17 +170,26 @@
 			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataadmin">Mengubah Data Admin Milik Sendiri</a></p>
 			  <p>Menu ini digunakan untuk mengubah data admin milik sendiri agar data yang tersimpan menjadi data yang valid dan update.</p>
 			</div>
+	
+	   <div class="span2"></div>
+        </div>
+		<div class="row-fluid">
+			<div class="span2"></div>
+			
+			<div class="span4">
+			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataalumni">Mengubah Data Alumni</a></p>
+			  <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
+            </div>
+			
 			<div class="span4">
 			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/tambahakun">Menambah Akun Alumni</a></p>
 			  <p>Menu ini digunakan untuk membuat akun alumni yang baru, agar data setiap alumni dapat disimpan di sistem ini.</p>
 			</div>
 			
-		    <div class="span4">
-			  <p><a class="btn btn-large btn-block btn-primary" href="pilihadmin/ubahdataalumni">Mengubah Data Alumni</a></p>
-			  <p>Menu ini digunakan untuk mengelola data alumni. Admin dapat mengubah data alumni dan juga menghapus data alumni yang tidak sesuai.</p>
-            </div>
-	   <!--<div class="span2"></div>-->
-        </div>
+			<div class="span2"></div>
+		</div>
+		
+	
 	</div>
 
     </div>
